@@ -1,0 +1,45 @@
+/* ==========================================================================
+  Nav - Social
+========================================================================== */
+
+
+.nav-social {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: $fontH5;
+  transform: rotate(-90deg);
+  top: 450px;
+  left: -230px;
+  @include fontMontserratBold();
+  li {
+    display: inline-block;
+    padding: 0 3px 0 0;
+  }
+
+  .pad-t--2x & {
+    top: 550px;
+  }
+
+  .no-csstransforms & {
+    top: 620px;
+    left: 20px;
+    li {
+      display: block;
+    }
+  }
+}
+
+.item-social {
+  &:after {
+    content: "•";
+    color: $colorRed;
+    padding: 0 0 0 5px;
+  }
+  &:last-of-type {
+    &:after {
+      content: "";
+      display: none;
+      padding: 0;
+    }
+  }
+}

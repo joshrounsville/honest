@@ -8,42 +8,48 @@
 $xSmall: 555px !default;
 $small: 740px !default;
 $medium: 950px !default;
-$large: 1170px !default;
+$large: 1240px !default;
 
 
 /*==========  SPACING  ==========*/
 
-$padding: 20px;
-$margin: 50px;
+$padding: 50px;
+$margin: 20px;
 
 
 /*==========  COLORS  ==========*/
 
-$colorGray: #737373 !default;
-$colorGrayDark: #404040 !default;
-$colorGrayLight: #bbb !default;
+$colorGray: #4A4A4A !default;
+$colorGrayXDark: #1A1919 !default;
+$colorGrayDark: #232320 !default;
+$colorGrayLight: #5C5C5C !default;
+$colorGrayXLight: #C1C1C1 !default;
+$colorGrayBG: #f0f0f0 !default;
 
-$colorText: $colorGrayDark !default;
-$colorBtn: #333 !default;
+$colorRed: #C63922 !default;
 
-$colorLink: #333 !default;
+$colorText: $colorGrayXDark !default;
+
+$colorLink: $colorRed !default;
 
 
 /*==========  FONTS  ==========*/
 
-$fontSmall: 13px !default;
+$fontSmall: 11px !default;
 $fontBase: 16px !default;
-$fontLarge: 20px !default;
+$fontLarge: 18px !default;
 
-$fontH1: 40px !default;
-$fontH2: 34px !default;
-$fontH3: 28px !default;
+$fontH1: 36px !default;
+$fontH2: 32px !default;
+$fontH3: 30px !default;
 $fontH4: 22px !default;
-$fontH5: 16px !default;
-$fontH6: 14px !default;
+$fontH5: 14px !default;
+$fontH6: 12px !default;
 
 $lineHeight: 1.5 !default;
 $lineHeightHeader: 1.2 !default;
 
-$fontRegular: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$fontHighlight: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontMontserrat: "montserrat", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontMontserratBold: "montserratBold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontLeagueGothic: "leagueGothic", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontLeagueGothicItalic: "leagueGothicItalic", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

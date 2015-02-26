@@ -22,10 +22,12 @@
 
 /**** import components ****/
 @import "_components/buttons", "_components/icons", "_components/font-awesome", "_components/carousel";
+@import "_components/section-headline", "_components/box-photo", "_components/box-community", "_components/box-memberships";
+@import "_components/nav-social", "_components/schedule-wrap";
 
 
 /**** import sections ****/
-@import "_sections/header", "_sections/footer", "_sections/main";
+@import "_sections/header", "_sections/footer", "_sections/main", "_sections/bg-wrap";
 
 
 /**** import pages ****/

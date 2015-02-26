@@ -18,6 +18,7 @@
   "smarttabs": true,
   "jquery": true,
   "globals": {
-    "Modernizr": true
+    "Modernizr": true,
+    "twitterFetcher": true
   }
 }

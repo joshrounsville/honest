@@ -14,3 +14,55 @@ ul, ol {
     display: inline-block;
   }
 }
+
+.list-box-four {
+  border: 1px solid $colorGrayDark;
+  @include clearfix();
+  li {
+    display: block;
+    width: 25%;
+    float: left;
+    height: 124px;
+    text-align: center;
+    border-right: 1px solid $colorGrayDark;
+  }
+  .last {
+    border-right: none;
+  }
+  strong {
+    display: block;
+    @include vAlign();
+  }
+}
+
+.list-count {
+  counter-reset: counter;
+  display: block;
+  @include clearfix();
+  li {
+    display: inline-block;
+    width: 49%;
+    height: 80px;
+    position: relative;
+    padding: 0 10px 0 70px;
+    vertical-align: middle;
+    &:before {
+      content: counter(counter, decimal-leading-zero);
+      counter-increment: counter;
+      font-size: 60px;
+      color: #E4E4E4;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -27px;
+      line-height: 1;
+      height: 54px;
+      display: block;
+      @include fontLeagueGothicItalic();
+    }
+  }
+  span {
+    display: block;
+    @include vAlign();
+  }
+}

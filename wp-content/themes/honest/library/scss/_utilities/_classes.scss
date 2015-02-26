@@ -37,6 +37,41 @@
   text-align: right;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-highlight {
+  font-size: $fontLarge;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red {
+  color: $colorRed;
+}
+
+.text-schedule {
+  font-size: 101px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 0.9;
+  span {
+    display: block;
+  }
+}
+
+.text-huge {
+  font-size: 50px;
+  line-height: $lineHeightHeader;
+}
+
+.text-medium {
+  font-size: 14px;
+}
+
 
 
 /*==========  BACKGROUND  ==========*/
@@ -45,10 +80,55 @@
   background-color: #fff;
 }
 
-.bg-gray {
-  background-color: $colorGrayLight;
+.bg-white-opacity {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
+.bg-gray-dark {
+  background-color: $colorGrayXDark;
+}
+
+.bg-dotted {
+  background-image: url(../img/structure/bg-dots.svg);
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+
+.bg-produce {
+  background: url(../img/backgrounds/produce.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+/*==========  BORDERS  ==========*/
+
+.border-bottom {
+  border-bottom: 2px solid #fff;
+}
+
+.inline-border {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -1px;
+  }
+  .text {
+    display: inline-block;
+    background: $colorGrayXDark;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+  }
+}
 
 
 /*==========  ALIGNMENT  ==========*/
@@ -111,6 +191,10 @@
 
 .truncate {
   @include ellipsis();
+}
+
+.relative {
+  position: relative;
 }
 
 

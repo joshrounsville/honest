@@ -20,6 +20,11 @@
   padding-left: $padding;
 }
 
+.pad-h--2x {
+  padding-right: $padding*2;
+  padding-left: $padding*2;
+}
+
 
 
 /*==========  PADDING TOP ==========*/
@@ -30,6 +35,18 @@
 
 .pad-t--2x {
   padding-top: $padding*2;
+}
+
+.pad-t--3x {
+  padding-top: $padding*3;
+}
+
+.pad-t--4x {
+  padding-top: $padding*4;
+}
+
+.pad-t--30 {
+  padding-top: 30px;
 }
 
 .pad-t--20 {
@@ -60,6 +77,18 @@
 
 .pad-b--2x {
   padding-bottom: $padding*2;
+}
+
+.pad-b--3x {
+  padding-bottom: $padding*3;
+}
+
+.pad-b--4x {
+  padding-bottom: $padding*4;
+}
+
+.pad-b--30 {
+  padding-bottom: 30px;
 }
 
 .pad-b--20 {

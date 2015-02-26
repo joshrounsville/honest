@@ -3,17 +3,30 @@
 ========================================================================== */
 
 
-@mixin fontRegular() {
-  font-family: $fontRegular;
+@mixin fontMontserrat() {
+  font-family: $fontMontserrat;
   font-style: normal;
   font-weight: normal;
 }
 
-@mixin fontHighlight() {
-  font-family: $fontHighlight;
+@mixin fontMontserratBold() {
+  font-family: $fontMontserratBold;
   font-style: normal;
   font-weight: normal;
 }
+
+@mixin fontLeagueGothic() {
+  font-family: $fontLeagueGothic;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin fontLeagueGothicItalic() {
+  font-family: $fontLeagueGothicItalic;
+  font-style: normal;
+  font-weight: normal;
+}
+
 
 @mixin breakpoint($point) {
   @if $point == xSmall {

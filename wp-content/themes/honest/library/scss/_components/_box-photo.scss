@@ -1,0 +1,23 @@
+/* ==========================================================================
+  Box - Photo
+========================================================================== */
+
+
+.box-photo {
+  position: relative;
+  .img-wrap {
+    height: 330px;
+    overflow: hidden;
+  }
+  .content-wrap {
+    background: #fff;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    margin: -70px auto 0;
+    h5 {
+      padding: 0 0 10px;
+    }
+  }
+}

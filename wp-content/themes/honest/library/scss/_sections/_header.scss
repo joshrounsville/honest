@@ -1,3 +1,65 @@
 /* ==========================================================================
   Header
 ========================================================================== */
+
+
+header {
+  background: #000;
+  margin-top: -10px;
+  padding: 0 0 20px;
+  animation: fadeIn 0.3s 0.3s both;
+}
+
+.nav-main {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  animation: fadeIn 0.3s 0.4s both;
+  @include fontMontserrat();
+  li {
+    padding: 0 15px;
+    &:nth-child(-n+3) {
+      padding: 0 22px;
+    }
+    &:first-of-type {
+      padding: 0 15px 0 0;
+    }
+    &:last-of-type {
+      padding: 0 0 0 15px;
+    }
+  }
+  h1 {
+    position: relative;
+    bottom: -40px;
+    padding: 0 10px;
+  }
+  a {
+    color: #fff;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
+.nav-item {
+  border-bottom: 6px solid transparent;
+  padding-bottom: 15px;
+  &:hover,
+  &:focus,
+  &.active {
+    border-color: #fff;
+  }
+}
+
+
+$pages: schedule, memberships, nutrition;
+
+@each $page in $pages {
+  .page-template-page-#{$page} {
+    .nav-#{$page} {
+      border-color: #fff;
+    }
+  }
+}

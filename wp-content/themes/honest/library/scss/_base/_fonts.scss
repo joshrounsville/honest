@@ -5,11 +5,124 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src:  url('/fonts/fontawesome/fontawesome-webfont.eot?v=4.0.3');
-  src:  url('/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
-        url('/fonts/fontawesome/fontawesome-webfont.woff?v=4.0.3') format('woff'),
-        url('/fonts/fontawesome/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
-        url('/fonts/fontawesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src:  url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.0.3');
+  src:  url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+        url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+        url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+        url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'leagueGothicItalic';
+  src: url('../fonts/league-gothic/leaguegothic-italic-webfont.eot');
+  src: url('../fonts/league-gothic/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/league-gothic/leaguegothic-italic-webfont.woff2') format('woff2'),
+       url('../fonts/league-gothic/leaguegothic-italic-webfont.woff') format('woff'),
+       url('../fonts/league-gothic/leaguegothic-italic-webfont.ttf') format('truetype'),
+       url('../fonts/league-gothic/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'leagueGothic';
+  src: url('../fonts/league-gothic/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/league-gothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.woff2') format('woff2'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.woff') format('woff'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.ttf') format('truetype'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratBold';
+  src: url('../fonts/montserrat/montserrat-bold-webfont.eot');
+  src: url('../fonts/montserrat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-bold-webfont.woff') format('woff'),
+       url('../fonts/montserrat/montserrat-bold-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat/montserrat-regular-webfont.eot');
+  src: url('../fonts/montserrat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff'),
+       url('../fonts/montserrat/montserrat-regular-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat/montserrat-regular-webfont.svg#montserratregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+// @font-face {
+//   font-family: 'leagueGothicCondensed';
+//   src: url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.eot');
+//   src: url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+//        url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.woff') format('woff'),
+//        url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+//        url('../fonts/league-gothic/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'leagueGothicCondensedItalic';
+//   src: url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.eot');
+//   src: url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+//        url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.woff') format('woff'),
+//        url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.ttf') format('truetype'),
+//        url('../fonts/league-gothic/leaguegothic-condenseditalic-webfont.svg#league_gothiccondensed_italic') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'montserratHairline';
+//   src: url('../fonts/montserrat/montserrat-hairline-webfont.eot');
+//   src: url('../fonts/montserrat/montserrat-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/montserrat/montserrat-hairline-webfont.woff2') format('woff2'),
+//        url('../fonts/montserrat/montserrat-hairline-webfont.woff') format('woff'),
+//        url('../fonts/montserrat/montserrat-hairline-webfont.ttf') format('truetype'),
+//        url('../fonts/montserrat/montserrat-hairline-webfont.svg#montserrathairline') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'montserratBlack';
+//   src: url('../fonts/montserrat/montserrat-black-webfont.eot');
+//   src: url('../fonts/montserrat/montserrat-black-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/montserrat/montserrat-black-webfont.woff2') format('woff2'),
+//        url('../fonts/montserrat/montserrat-black-webfont.woff') format('woff'),
+//        url('../fonts/montserrat/montserrat-black-webfont.ttf') format('truetype'),
+//        url('../fonts/montserrat/montserrat-black-webfont.svg#montserratblack') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'montserratLight';
+//   src: url('../fonts/montserrat/montserrat-light-webfont.eot');
+//   src: url('../fonts/montserrat/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+//        url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff'),
+//        url('../fonts/montserrat/montserrat-light-webfont.ttf') format('truetype'),
+//        url('../fonts/montserrat/montserrat-light-webfont.svg#montserratlight') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }

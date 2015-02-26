@@ -34,6 +34,8 @@ textarea {
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle;
+  @include fontMontserrat();
+  transition: all 0.13s ease-in-out;
 }
 
 button,
@@ -80,6 +82,35 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+.form-subscribe {
+  input {
+    display: inline-block;
+    &[type=email] {
+      @include placeholder(#fff);
+      border: none;
+      outline: 0;
+      background: none;
+      border-bottom: 2px solid #fff;
+      padding: 5px 0;
+    }
+    &[type=submit] {
+      border: none;
+      outline: 0;
+      background: none;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 0 0 4px;
+      position: relative;
+      bottom: -10px;
+      &:hover,
+      &:focus {
+        color: $colorRed;
+      }
+    }
+  }
 }
 
 

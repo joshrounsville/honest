@@ -1,0 +1,46 @@
+/* ==========================================================================
+  Box - Community
+========================================================================== */
+
+
+.box-community {
+  height: 220px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.box-community-inner {
+  @include vAlign();
+}
+
+.list-reviews {
+  font-size: $fontLarge;
+  color: $colorGrayLight;
+  line-height: $lineHeightHeader;
+  li {
+    padding: 0 0 20px;
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+  span {
+    display: block;
+    padding: 5px 0 0 0;
+    @include fontMontserratBold();
+  }
+}
+
+.feed-twitter {
+  overflow: hidden;
+  font-size: $fontH4;
+  color: $colorGrayLight;
+  line-height: $lineHeightHeader;
+  a {
+    @include ellipsis();
+  }
+  .timePosted {
+    font-size: 14px;
+    color: $colorGrayXLight;
+    padding: 0;
+  }
+}

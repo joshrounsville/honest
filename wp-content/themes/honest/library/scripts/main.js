@@ -57,33 +57,34 @@ $(function() {
 
 
 
-  //////// carousel setup
-  var slider = $('.slider');
+  //////// twitter feed
 
-  slider.owlCarousel({
-    items : 3,
-    itemsDesktop : [1199, 4],
-    itemsDesktopSmall : [980, 3],
-    itemsTablet: [768, 2],
-    itemsTabletSmall: false,
-    itemsMobile : [479, 1],
-    slideSpeed : 200,
-    paginationSpeed : 800,
-    rewindSpeed : 1000,
-    autoPlay : false,
-    stopOnHover : true,
-    navigation : true,
-    rewindNav : true,
-    scrollPerPage : false,
-    pagination : true,
-    paginationNumbers: false,
-    responsive: true,
-    responsiveRefreshRate : 200,
-    responsiveBaseWidth: window,
-    baseClass : 'owl-carousel',
-    mouseDrag : false
-  });
+  var twitterFeed = function() {
 
+    var config = {
+      'id': '567240723917856768',
+      'domId': 'js--feed-twitter',
+      'maxTweets': 1,
+      'enableLinks': true,
+      'showUser': false,
+      'showTime': true,
+      'dateFunction': dateFormatter,
+      'showRetweet': false,
+      'showInteraction': false,
+      'showImages': false
+    };
+
+    twitterFetcher.fetch(config);
+
+    function dateFormatter(date) {
+      return date.toDateString();
+    }
+
+  };
+
+  if ( $('#js--feed-twitter').length ) {
+    twitterFeed();
+  }
 
 
 

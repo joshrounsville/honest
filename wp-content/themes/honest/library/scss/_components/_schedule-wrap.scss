@@ -1,0 +1,189 @@
+/* ==========================================================================
+  Schedule Wrap
+========================================================================== */
+
+
+.schedule-wrap {
+  min-height: 500px;f
+  .header {
+    position: relative;
+  }
+  .action_icon {
+    float: right;
+    padding: 0 0 0 10px;
+    font-size: $fontH5;
+    color: $colorGray;
+  }
+  h1 {
+    font-size: $fontH4;
+  }
+  .filters {
+    border-top: 1px solid #b8b8b8;
+    margin-top: 10px;
+    padding-top: 10px;
+    @include clearfix();
+    select {
+      min-width: 300px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.hc_header_time {
+  padding: 0 0 0 10px;
+  @include fontMontserrat();
+}
+
+.filter_days,
+.filter_time_of_day {
+  display: block;
+  width: 49%;
+  font-size: $fontH5;
+  float: left;
+  color: $colorGrayLight;
+  padding: 20px 0 0 0;
+  label {
+    padding-right: 8px;
+  }
+  input {
+    margin-right: 3px;
+  }
+}
+
+.filter-days {
+  padding-right: 100px;
+}
+
+.date_links {
+  padding: 20px 0 0 0;
+}
+
+.healcode-previous,
+.healcode-today,
+.healcode-next {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  margin-right: -11px;
+  a {
+    display: inline-block;
+    background: #878787;
+    padding: 5px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $fontSmall;
+    transition: background 0.13s ease-in-out;
+    @include fontMontserratBold();
+    &:hover,
+    &:focus {
+      background: $colorGray;
+    }
+  }
+}
+
+.healcode-previous {
+  margin-right: -12px;
+  a {
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+.healcode-next {
+  a {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.healcode-jump-to-date {
+  padding-left: 100px;
+  input {
+    font-size: $fontH6;
+    padding: 4px 8px;
+    margin-right: 5px;
+  }
+}
+
+.day_links {
+  display: none;
+}
+
+.schedule {
+  margin-top: 30px;
+  width: 100%;
+  th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: $fontH6;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+}
+
+.schedule_header {
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.hc_class {
+  color: $colorGray;
+  font-size: $fontH5;
+  td {
+    padding: 7px 5px;
+  }
+}
+
+.hc_time {
+  text-transform: lowercase;
+}
+
+.hc-button {
+  display: inline-block;
+  vertical-align: middle;
+  background: #878787;
+  padding: 5px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: $fontSmall;
+  transition: background 0.13s ease-in-out;
+  border-radius: 8px;
+  @include fontMontserratBold();
+  &:hover,
+  &:focus {
+    background: $colorGray;
+    color: #fff;
+  }
+}
+
+.hc_waitlist {
+  display: inline-block;
+  vertical-align: middle;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+.classname {
+  @include fontMontserratBold();
+  a {
+    color: $colorGrayDark;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+.trainer {
+  a {
+    color: $colorGrayDark;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* ==========================================================================
+  Section Headline
+========================================================================== */
+
+
+.section-headline {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  .count {
+    color: $colorRed;
+    @include fontLeagueGothicItalic();
+    font-size: $fontH3 + 12;
+    letter-spacing: 2px;
+    padding: 0 15px 0 0;
+    position: relative;
+    bottom: -5px;
+    line-height: 0;
+  }
+  .underline {
+    border-bottom: 6px solid $colorGrayXDark;
+    padding: 0 0 6px;
+  }
+}
+
+.section-headline-small {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 0 10px;
+  &:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: $colorRed;
+    margin: 15px auto;
+  }
+}

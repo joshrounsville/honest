@@ -1,3 +1,49 @@
 /* ==========================================================================
   Footer
 ========================================================================== */
+
+
+footer {
+  padding: $padding 0;
+  color: #fff;
+  font-size: $fontSmall;
+  background: #000;
+  animation: fadeIn 0.3s 0.2s both;
+  h6 {
+    text-transform: uppercase;
+    padding: 0 0 13px;
+  }
+  a {
+    color: #fff;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+.list-footer-content {
+  li {
+    vertical-align: top;
+    padding-right: 40px;
+    &.first {
+      padding: 0 80px 0 0;
+    }
+    &.last {
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+.list-info-footer {
+  li {
+    display: block;
+  }
+}
+
+.list-social-footer {
+  font-size: $fontLarge;
+  li {
+    padding: 0 10px 0 0;
+  }
+}

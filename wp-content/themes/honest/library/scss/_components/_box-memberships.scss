@@ -1,0 +1,43 @@
+/* ==========================================================================
+  Box - Memberships
+========================================================================== */
+
+
+.box-memberships {
+  .content {
+    padding: $padding 30px;
+  }
+  .h1 {
+    padding: 0 0 10px;
+  }
+  .border-bottom {
+    padding: 0 0 17px;
+    margin-bottom: 7px;
+  }
+  p, .list-inline {
+    padding: 0;
+    line-height: 1;
+  }
+  .border {
+    border-left: 1px solid #fff;
+    padding-left: 9px;
+    margin-left: 8px;
+  }
+}
+
+.list-memberships-classes {
+  padding: 25px 0;
+  font-size: $fontLarge;
+  li {
+    padding: 0 0 5px;
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+}
+
+.price-memberships {
+  display: block;
+  padding: 0 0 10px;
+}
+
