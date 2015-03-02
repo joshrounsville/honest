@@ -23,13 +23,12 @@
 }
 
 .section-headline-small {
-  text-transform: uppercase;
   display: inline-block;
   padding: 0 0 10px;
   &:after {
     content: "";
     display: block;
-    width: 50%;
+    width: 80px;
     height: 4px;
     background: $colorRed;
     margin: 15px auto;

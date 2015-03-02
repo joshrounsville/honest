@@ -43,7 +43,7 @@
       <div class="row">
         <div class="span8 offset2">
           <div class="bg-white-opacity text-center pad-v pad-h">
-            <h5 class="section-headline-small">Honest Nutrition</h5>
+            <h5 class="section-headline-small text-uppercase">Honest Nutrition</h5>
             <ul class="text-uppercase text-medium">
               <li class="pad-b--20"><span class="break">Learn the value in learning to recommit. Make mistakes (enjoy them)</span> and get back on track!</li>
               <li class="pad-b--20">Use the 8/20 rule!</li>

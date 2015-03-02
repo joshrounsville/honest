@@ -6,6 +6,7 @@
 a {
   color: $colorLink;
   text-decoration: none;
+  will-change: all;
   transition: all 0.13s ease-in-out;
   &:hover,
   &:focus {
