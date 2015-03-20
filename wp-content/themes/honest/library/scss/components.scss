@@ -21,17 +21,17 @@
 
 
 /**** import components ****/
-@import "_components/buttons", "_components/icons", "_components/font-awesome", "_components/carousel";
-@import "_components/section-headline", "_components/box-photo", "_components/box-community", "_components/box-memberships";
-@import "_components/nav-social", "_components/schedule-wrap";
+@import "_components/buttons", "_components/icons", "_components/font-awesome", "_components/carousel", "_components/slider-results";
+@import "_components/box-photo", "_components/box-community", "_components/box-memberships", "_components/box-trainer";
+@import "_components/section-headline", "_components/nav-social", "_components/schedule-wrap";
 
 
 /**** import sections ****/
-@import "_sections/header", "_sections/footer", "_sections/main", "_sections/bg-wrap";
+@import "_sections/header", "_sections/footer", "_sections/main", "_sections/bg-wrap", "_sections/sidebar";
 
 
 /**** import pages ****/
-@import "_pages/home";
+@import "_pages/home", "_pages/blog";
 
 
 /**** import classes ****/

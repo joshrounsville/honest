@@ -1,0 +1,91 @@
+/* ==========================================================================
+  Slider Results
+========================================================================== */
+
+
+.slider-results {
+  p {
+    font-size: $fontSmall;
+    &:first-of-type {
+      font-size: $fontLarge;
+    }
+  }
+  .read-more {
+    float: left;
+    margin: 20px 0 0 0;
+    font-size: $fontSmall;
+    color: #fff;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+
+  .owl-item {
+    opacity: 0;
+    transition: opacity 0.15s 0.2s ease-in-out;
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .owl-buttons {
+    padding: 60px 0 0 0;
+    text-transform: uppercase;
+    font-size: $fontSmall;
+    @include clearfix();
+  }
+
+  .owl-prev,
+  .owl-next {
+    transition: color 0.13s ease-in-out, opacity 0.1s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+    &.disabled {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      transition: transform 0.1s ease-in-out;
+    }
+  }
+
+  .owl-prev {
+    float: left;
+    &:hover,
+    &:focus {
+      &:before {
+        transform: translateX(-5px);
+      }
+    }
+    &:before {
+      border-right: 22px solid #fff;
+      margin-right: 20px;
+    }
+  }
+
+  .owl-next {
+    float: right;
+    &:hover,
+    &:focus {
+      &:after {
+        transform: translateX(5px);
+      }
+    }
+    &:after {
+      border-left: 22px solid #fff;
+      margin-left: 20px;
+    }
+  }
+}

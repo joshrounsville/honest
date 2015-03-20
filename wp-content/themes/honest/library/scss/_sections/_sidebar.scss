@@ -1,0 +1,79 @@
+/* ==========================================================================
+  Sidebar
+========================================================================== */
+
+
+.box-sidebar {
+  border-top: 2px solid $colorGrayXLight;
+  padding: 30px 0;
+  font-size: $fontSmall;
+  &:last-of-type {
+    border-bottom: 2px solid $colorGrayXLight;
+  }
+  p {
+    padding: 0;
+  }
+}
+
+.header-sidebar {
+  color: $colorGrayXLight;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 15px;
+  letter-spacing: 1px;
+  @include fontLeagueGothic();
+}
+
+.sidebar-content-featured-posts {
+  li {
+    display: block;
+    margin: 0 0 15px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  a {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+.sidebar-content-archives,
+.sidebar-content-categories {
+  li {
+    display: block;
+    margin: 0 0 5px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    color: $colorGray;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+.sidebar-content-follow {
+  li {
+    padding: 0 5px;
+  }
+  a {
+    color: $colorGrayXLight;
+    font-size: $fontH1;
+    display: block;
+    @include clearfix();
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+  span {
+    float: left;
+  }
+}

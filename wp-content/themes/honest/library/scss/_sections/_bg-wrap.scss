@@ -29,4 +29,18 @@
   .page-template-page-get-started & {
     background-image: url(../img/backgrounds/bg-2.jpg);
   }
+  .page-template-page-contact & {
+    background-image: url(../img/backgrounds/bg-2.jpg);
+  }
+  .page-template-page-the-studio & {
+    background-image: url(../img/backgrounds/bg-3.jpg);
+  }
+  .blog & {
+    background-image: url(../img/backgrounds/bg-2.jpg);
+  }
+}
+
+.bg-map {
+  background: url(../img/backgrounds/bg-map.jpg) no-repeat center bottom;
+  background-size: cover;
 }

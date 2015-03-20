@@ -4,29 +4,52 @@
 
 
 .box-community {
-  height: 220px;
+  height: 240px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .box-community-inner {
   @include vAlign();
 }
 
+.feed-instagram {
+  display: block;
+  @include clearfix();
+  li {
+    display: block;
+    width: 33.333333%;
+    float: left;
+  }
+  a {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
 .list-reviews {
   font-size: $fontLarge;
-  color: $colorGrayLight;
   line-height: $lineHeightHeader;
   li {
-    padding: 0 0 20px;
+    padding: 0 0 30px;
     &:last-of-type {
       padding: 0;
     }
   }
   span {
     display: block;
-    padding: 5px 0 0 0;
+    padding: 15px 0 0 0;
+    font-size: $fontH5;
     @include fontMontserratBold();
+  }
+  a {
+    color: $colorGrayLight;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
   }
 }
 

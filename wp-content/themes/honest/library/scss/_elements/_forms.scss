@@ -140,6 +140,39 @@ input::-moz-focus-inner {
   }
 }
 
+.form-contact {
+  @include clearfix();
+  label {
+    text-transform: uppercase;
+    font-size: $fontH5;
+    display: block;
+    &:first-of-type {
+      padding-bottom: 20px;
+    }
+  }
+  input,
+  textarea {
+    margin-top: 7px;
+  }
+}
+
+.form-column {
+  width: 45%;
+}
+
+.form-column-left {
+  float: left;
+  label {
+    &:first-of-type {
+      padding-bottom: 63px;
+    }
+  }
+}
+
+.form-column-right {
+  float: right;
+}
+
 .input-styled {
   border: 2px solid $colorGrayXDark;
   padding: 15px 15px 14px;
@@ -149,6 +182,23 @@ input::-moz-focus-inner {
     outline: 0;
     border: none;
     border: 2px solid $colorGrayLight;
+  }
+}
+
+.input-white {
+  border: none;
+  outline: 0;
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 15px 15px 14px;
+  line-height: $lineHeight;
+  font-size: $fontSmall;
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: none;
+    background: #f0f0f0;
   }
 }
 

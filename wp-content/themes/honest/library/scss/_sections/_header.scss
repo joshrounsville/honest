@@ -7,7 +7,7 @@ header {
   background: #000;
   margin-top: -10px;
   padding: 0 0 20px;
-  animation: fadeIn 0.3s 0.3s both;
+  animation: fadeIn 0.3s both;
 }
 
 .nav-main {
@@ -15,7 +15,6 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  animation: fadeIn 0.3s 0.4s both;
   @include fontMontserrat();
   li {
     padding: 0 15px;
@@ -54,12 +53,18 @@ header {
 }
 
 
-$pages: schedule, memberships, nutrition;
+$pages: schedule, memberships, nutrition, contact, the-studio;
 
 @each $page in $pages {
   .page-template-page-#{$page} {
     .nav-#{$page} {
       border-color: #fff;
     }
+  }
+}
+
+.blog {
+  .nav-blog {
+    border-color: #fff;
   }
 }

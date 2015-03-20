@@ -56,6 +56,44 @@ $(function() {
 
 
 
+  //////// instagram feed
+  var getInstagram = function() {
+    $.getJSON('https://api.instagram.com/v1/users/34310299/media/recent?access_token=34310299.8620aa1.ad482bdd76c0447db57ec7c5c3125da0&count=6&callback=?', function(data) {
+
+      // do nothing
+
+    }).done(function(data) {
+
+      buildInstagram(data);
+
+    });
+
+  };
+
+  var buildInstagram = function(photos) {
+    var target = $('#js--feed-instagram');
+
+    $.each(photos.data, function() {
+
+      $('<li>', {
+        'class': 'item-instagram'
+      }).appendTo(target);
+
+      $('<a>', {
+        'href': this.link,
+        'target': '_blank'
+      }).appendTo('.item-instagram:last');
+
+      $('<img>', {
+        'src': this.images.low_resolution.url
+      }).appendTo('.item-instagram:last a');
+
+    });
+
+  };
+
+
+
 
   //////// twitter feed
 
@@ -82,11 +120,123 @@ $(function() {
 
   };
 
-  if ( $('#js--feed-twitter').length ) {
+
+
+
+  //////// yelp feed
+
+  var getYelp = function() {
+
+    var auth = {
+      consumerKey: 'R_aqIjawzAS3_EE1XjVtNQ',
+      consumerSecret: 'sw1TWLvI9p_Xd_sfJdXOYprfPmQ',
+      accessToken: 'ljMfqV651Aj0sHfuUD3gI0x-XCj1NCmn',
+      accessTokenSecret: 'Zg0z1LMBlKO0UQr3gTSrHHns7j0',
+      serviceProvider: {
+        signatureMethod: 'HMAC-SHA1'
+      }
+    };
+
+    var accessor = {
+      consumerSecret: auth.consumerSecret,
+      tokenSecret: auth.accessTokenSecret
+    };
+
+    var parameters = [];
+    //parameters.push(['term', terms]);
+    //parameters.push(['location', near]);
+    parameters.push(['callback', 'cb']);
+    parameters.push(['oauth_consumer_key', auth.consumerKey]);
+    parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
+    parameters.push(['oauth_token', auth.accessToken]);
+    parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
+
+    var message = {
+      'action': 'http://api.yelp.com/v2/business/honest-training-portland',
+      'method': 'GET',
+      'parameters': parameters
+    };
+
+    OAuth.setTimestampAndNonce(message);
+    OAuth.SignatureMethod.sign(message, accessor);
+
+    var parameterMap = OAuth.getParameterMap(message.parameters);
+    parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature);
+
+    $.ajax({
+      'url': message.action,
+      'data': parameterMap,
+      'cache': true,
+      'dataType': 'jsonp',
+      'jsonpCallback': 'cb',
+      'success': function(data, textStats, XMLHttpRequest) {
+
+        buildYelp(data);
+
+      }
+    });
+
+  };
+
+
+  var buildYelp = function(data) {
+    var target = $('#js--feed-yelp');
+    var review = data.reviews[0];
+
+    console.log(data);
+
+    $('<li>', {
+      'class': 'item-yelp'
+    }).prependTo(target);
+
+    $('<a>', {
+      'href': data.url + '#super-container',
+      'html': review.excerpt,
+      'target': '_blank'
+    }).appendTo('.item-yelp:last');
+
+    $('<span>').appendTo('.item-yelp:last');
+
+    $('<a>', {
+      'href': 'http://www.yelp.com/user_details?userid=' + review.user.id,
+      'html': review.user.name,
+      'target': '_blank'
+    }).appendTo('.item-yelp:last span');
+
+  };
+
+
+
+
+  if ( body.hasClass('home') ) {
+    getInstagram();
     twitterFeed();
+    getYelp();
   }
 
 
+
+
+
+
+  //////// carousel setup
+  var slider = $('.slider');
+
+  slider.owlCarousel({
+    items : 1,
+    slideSpeed : 200,
+    autoPlay : false,
+    navigation : true,
+    rewindNav : false,
+    scrollPerPage : false,
+    pagination : false,
+    responsive: true,
+    responsiveRefreshRate : 200,
+    responsiveBaseWidth: window,
+    baseClass : 'owl-carousel',
+    mouseDrag : false,
+    addClassActive : true
+  });
 
 
 

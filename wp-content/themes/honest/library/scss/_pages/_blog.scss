@@ -1,0 +1,86 @@
+/* ==========================================================================
+  Blog
+========================================================================== */
+
+
+.post-excerpt-wrap {
+  padding: 0 0 $padding+20;
+}
+
+.time-post {
+  color: $colorGrayXLight;
+  font-size: $fontH4;
+  letter-spacing: 1px;
+  padding: 0 0 5px;
+  @include fontLeagueGothic();
+}
+
+.headline-post {
+  padding: 0 0 15px;
+  @include fontMontserrat();
+  a {
+    color: $colorGrayDark;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+.post-img-wrap {
+  margin: 0 0 20px;
+}
+
+.post-content {
+  font-size: $fontSmall + 2;
+  line-height: 1.7;
+  color: $colorGray;
+  p {
+    padding: 0 0 20px;
+  }
+  ul, ol {
+    padding: 0 0 20px 30px;
+  }
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: decimal;
+  }
+  li {
+    padding: 0 0 5px;
+  }
+}
+
+.post-read-more {
+  text-align: center;
+  padding: 30px 0 0;
+}
+
+.post-share {
+  background: #E4E4E4;
+  text-transform: uppercase;
+  font-size: $fontSmall - 2;
+  color: #9B9B9B;
+  padding: 11px 20px 10px;
+  margin-top: 40px;
+  @include clearfix();
+  a {
+    color: #9B9B9B;
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+    &.right {
+      position: relative;
+      bottom: -4px;
+    }
+  }
+  li {
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+  }
+  span {
+    font-size: $fontLarge + 4;
+  }
+}

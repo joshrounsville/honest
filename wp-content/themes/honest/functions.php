@@ -67,8 +67,8 @@ if ( ! isset( $content_width ) ) {
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'post-thumb', 262, 130, true );
+add_image_size( 'post-header', 749, 324, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -94,8 +94,8 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'bones-thumb-600' => __('600px by 150px'),
-        'bones-thumb-300' => __('300px by 100px'),
+        'post-thumb' => __('262px by 130px'),
+        'post-header' => __('749px by 324px')
     ) );
 }
 

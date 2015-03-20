@@ -11,11 +11,14 @@
   }
   .content-wrap {
     background: #fff;
-    padding: 20px 30px;
+    padding: 20px;
     position: relative;
     z-index: 2;
     width: 80%;
     margin: -70px auto 0;
+    &.equal-height {
+      min-height: 228px;
+    }
     h5 {
       padding: 0 0 10px;
     }
