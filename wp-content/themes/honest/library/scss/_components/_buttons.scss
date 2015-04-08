@@ -50,12 +50,24 @@
   &.btn--block {
     display: block;
     width: 100%;
-    padding: 13px 0 12px;
+    padding: 14px 0 13px;
   }
   &.btn--med-width {
     min-width: 174px;
   }
   &.btn--wide-width {
     min-width: 300px;
+  }
+
+  @include breakpoint(large) {
+    padding: 12px 25px 11px;
+  }
+  @include breakpoint(medium) {
+    padding: 11px 20px 10px;
+    font-size: $fontH5 - 2;
+  }
+  @include breakpoint(small) {
+    display: block;
+    width: 100%;
   }
 }

@@ -9,7 +9,7 @@
 
     <title><?php wp_title('•', '•', right); ?></title>
 
-    <meta name="description" content="">
+    <meta name="description" content="We are a FUN, non-intimidating non-competitive neighborhood training studio that believes in holistic wellness and sustainable/life changing fitness/nutrition programs. We offer small group circuit training, Indoor cycling and yoga for all levels.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/library/img/touch/favicon.png">
@@ -24,6 +24,15 @@
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/img/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
+    <?php if ( is_single() ) : ?>
+    <meta property="og:title" content="<?php wp_title('•', '•', right); ?>">
+    <meta property="og:site_name" content="<?php wp_title('•', '•', right); ?>">
+    <meta property="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="We are a FUN, non-intimidating non-competitive neighborhood training studio that believes in holistic wellness and sustainable/life changing fitness/nutrition programs. We offer small group circuit training, Indoor cycling and yoga for all levels.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/library/img/touch/facebook-icon.png">
+    <?php endif; ?>
+
 		<?php wp_head(); ?>
 
 	</head>
@@ -36,13 +45,30 @@
         <div class="row">
           <div class="span12">
 
+            <nav class="nav-mobile">
+              <ul>
+                <li>
+                  <a href="/" class="logo-header-mobile">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/img/logos/honest.svg" alt="Honest Small Group Training" width="164" height="130">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-mobile js--hide-show-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
             <nav class="nav-main" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
               <ul class="list-inline">
                 <li><a href="/the-studio/" class="nav-item nav-the-studio">The Studio</a></li>
                 <li><a href="/schedule/" class="nav-item nav-schedule">Schedule</a></li>
                 <li><a href="/nutrition/" class="nav-item nav-nutrition">Nutrition</a></li>
                 <li><a href="/blog/" class="nav-item nav-blog">Blog</a></li>
-                <li>
+                <li class="tablet-hide mobile-hide">
                   <h1 itemscope itemtype="http://schema.org/Organization">
                     <a href="/" class="logo-header">
                       <img src="<?php echo get_template_directory_uri(); ?>/library/img/logos/honest.svg" alt="Honest Small Group Training" width="164" height="130">
@@ -60,5 +86,3 @@
 
       </div>
     </header>
-
-    <div class="bg-wrap"></div>

@@ -260,5 +260,30 @@ function bones_excerpt_more($more) {
 }
 
 
+/*********************
+SETUP CUSTOM TAGS
+*********************/
+
+// get taxonomies terms links
+function custom_taxonomies_terms_links(){
+  $post = get_post( $post->ID );
+  $post_type = $post->post_type;
+  $taxonomies = get_object_taxonomies( $post_type, 'objects' );
+  $out = array();
+
+  foreach ( $taxonomies as $taxonomy_slug => $taxonomy ) {
+
+    $terms = get_the_terms( $post->ID, $taxonomy_slug );
+
+    if ( !empty( $terms ) ) {
+      foreach ( $terms as $term ) {
+        $out[] = "<span>" . $term->name . "</span>";
+      }
+    }
+  }
+
+  return implode('', $out );
+}
+
 
 ?>

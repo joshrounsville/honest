@@ -33,6 +33,20 @@ ul, ol {
     display: block;
     @include vAlign();
   }
+
+  @include breakpoint(small) {
+    li {
+      height: 110px;
+      width: 50%;
+      &:first-of-type {
+        border-bottom: 1px solid $colorGrayDark;
+      }
+      &:nth-of-type(2) {
+        border-right: none;
+        border-bottom: 1px solid $colorGrayDark;
+      }
+    }
+  }
 }
 
 .list-count {
@@ -64,5 +78,19 @@ ul, ol {
   span {
     display: block;
     @include vAlign();
+  }
+
+  @include breakpoint(small) {
+    li {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 54px;
+      margin: 0 0 20px;
+    }
+    span {
+      top: auto;
+      transform: none;
+    }
   }
 }

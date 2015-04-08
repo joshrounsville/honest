@@ -14,6 +14,13 @@ body {
   line-height: $lineHeight;
   position: relative;
   animation: fadeIn 0.3s 0.1s both;
+
+  @include breakpoint(medium) {
+    font-size: $fontBase - 2;
+    &.show-mobile-nav {
+      overflow: hidden;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -34,39 +41,39 @@ h1, h2, h3, h4, h5, h6,
 .h1, h1 {
   font-size: $fontH1;
   @include breakpoint(large) {
-    font-size: $fontH1 - 2;
+    font-size: $fontH1 - 8;
   }
   @include breakpoint(medium) {
-    font-size: $fontH1 - 4;
+    font-size: $fontH1 - 10;
   }
   @include breakpoint(small) {
-    font-size: $fontH1 - 6;
+    font-size: $fontH1 - 12;
   }
 }
 
 .h2, h2 {
   font-size: $fontH2;
   @include breakpoint(large) {
-    font-size: $fontH2 - 2;
+    font-size: $fontH2 - 6;
   }
   @include breakpoint(medium) {
-    font-size: $fontH2 - 4;
+    font-size: $fontH2 - 7;
   }
   @include breakpoint(small) {
-    font-size: $fontH2 - 5;
+    font-size: $fontH2 - 8;
   }
 }
 
 .h3, h3 {
   font-size: $fontH3;
   @include breakpoint(large) {
-    font-size: $fontH3 - 2;
+    font-size: $fontH3 - 4;
   }
   @include breakpoint(medium) {
-    font-size: $fontH3 - 3;
+    font-size: $fontH3 - 5;
   }
   @include breakpoint(small) {
-    font-size: $fontH3 - 4;
+    font-size: $fontH3 - 6;
   }
 }
 

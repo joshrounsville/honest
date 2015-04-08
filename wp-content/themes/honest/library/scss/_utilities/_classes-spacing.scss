@@ -13,6 +13,15 @@
 .pad-v {
   padding-top: $padding;
   padding-bottom: $padding;
+
+  @include breakpoint(medium) {
+    padding-top: $padding - 10;
+    padding-bottom: $padding - 10;
+  }
+  @include breakpoint(small) {
+    padding-top: $padding - 30;
+    padding-bottom: $padding - 30;
+  }
 }
 
 .pad-h {
@@ -31,6 +40,13 @@
 
 .pad-t {
   padding-top: $padding;
+
+  @include breakpoint(medium) {
+    padding-top: $padding - 10;
+  }
+  @include breakpoint(small) {
+    padding-top: $padding - 30;
+  }
 }
 
 .pad-t--2x {
@@ -43,6 +59,16 @@
 
 .pad-t--4x {
   padding-top: $padding*4;
+
+  @include breakpoint(large) {
+    padding-top: $padding*3;
+  }
+  @include breakpoint(medium) {
+    padding-top: $padding*2;
+  }
+  @include breakpoint(small) {
+    padding-top: $padding*1.5;
+  }
 }
 
 .pad-t--30 {
@@ -55,6 +81,10 @@
 
 .pad-t--10 {
   padding-top: 10px;
+
+  @include breakpoint(small) {
+    padding-top: 0;
+  }
 }
 
 .pad-t--0 {
@@ -73,14 +103,29 @@
 
 .pad-b {
   padding-bottom: $padding;
+
+  @include breakpoint(medium) {
+    padding-bottom: $padding - 10;
+  }
+  @include breakpoint(small) {
+    padding-bottom: $padding - 30;
+  }
 }
 
 .pad-b--2x {
   padding-bottom: $padding*2;
+
+  @include breakpoint(medium) {
+    padding-bottom: $padding;
+  }
 }
 
 .pad-b--3x {
   padding-bottom: $padding*3;
+
+  @include breakpoint(medium) {
+    padding-bottom: $padding*2;
+  }
 }
 
 .pad-b--4x {
@@ -93,6 +138,10 @@
 
 .pad-b--20 {
   padding-bottom: 20px;
+
+  @include breakpoint(small) {
+    padding-bottom: 10px;
+  }
 }
 
 .pad-b--10 {

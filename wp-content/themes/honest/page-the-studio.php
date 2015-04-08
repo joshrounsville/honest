@@ -6,7 +6,7 @@
 
 
 <?php get_header(); ?>
-
+  <div class="bg-wrap bg-2-1"></div>
 
   <section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-white relative">
@@ -28,104 +28,57 @@
         </div>
       </div>
 
+      <?php $queryTrainer = new WP_Query( array('post_type' => 'trainers', 'order' => 'ASC') ); ?>
+      <?php $count = 1; if ($queryTrainer->have_posts()): ?>
+
       <div class="row text-center pad-b">
         <div class="span12">
           <h3 class="section-headline"><span class="count">02</span><span class="underline">Our Trainers</span></h3>
         </div>
       </div>
 
-      <div class="row pad-b">
-        <div class="span4">
-          <div class="box-trainer">
-            <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/paisley-meekin.jpg" width="359" height="500" alt="Paisley Meekin">
-            </div>
-            <div class="content-wrap">
-              <h3 class="h2 text-uppercase text-white">Paisley Meekin</h3>
-              <ul class="text-uppercase text-white">
-                <li class="left"><h6>Circuit, Indoor Cycling</h6></li>
-                <li class="right"><h6>>>></h6></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="box-trainer">
-            <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/emily-celichowski.jpg" width="359" height="500" alt="Emily Celichowski">
-            </div>
-            <div class="content-wrap">
-              <h3 class="h2 text-uppercase text-white">Emily Celichowski</h3>
-              <ul class="text-uppercase text-white">
-                <li class="left"><h6>Circuit</h6></li>
-                <li class="right"><h6>>>></h6></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="box-trainer">
-            <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/ilea-sullivan.jpg" width="359" height="500" alt="Ilea Sullivan">
-            </div>
-            <div class="content-wrap">
-              <h3 class="h2 text-uppercase text-white">Ilea Sullivan</h3>
-              <ul class="text-uppercase text-white">
-                <li class="left"><h6>Circuit</h6></li>
-                <li class="right"><h6>>>></h6></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php while ($queryTrainer->have_posts()) : $queryTrainer->the_post(); ?>
 
+      <?php if ($count % 3 == 1): ?>
       <div class="row pad-b">
+      <?php endif; ?>
+
         <div class="span4">
           <div class="box-trainer">
             <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/breeanna-moore.jpg" width="359" height="500" alt="Breeanna Moore">
+              <?php $thumbnailTrainer = wp_get_attachment_image_src( get_post_thumbnail_id(), 'trainer' ); ?>
+              <img src="<?php echo $thumbnailTrainer[0]; ?>" alt="<?php the_title(); ?>" width="359" height="500">
             </div>
-            <div class="content-wrap text-white">
-              <h3 class="h2 text-uppercase">Breeanna Moore</h3>
-              <ul class="text-uppercase">
-                <li class="left"><h6>Circuit, Running</h6></li>
+            <div class="content-wrap">
+              <h3 class="h2 text-uppercase text-white"><?php the_title(); ?></h3>
+              <ul class="text-uppercase text-white">
+                <li class="left"><h6><?php echo custom_taxonomies_terms_links(); ?></h6></li>
                 <li class="right"><h6>>>></h6></li>
               </ul>
+              <div class="bio-wrap">
+                <?php the_content(); ?>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span4">
-          <div class="box-trainer">
-            <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/emily-strome.jpg" width="359" height="500" alt="Emily Strome">
-            </div>
-            <div class="content-wrap text-white">
-              <h3 class="h2 text-uppercase">Emily Strome</h3>
-              <ul class="text-uppercase">
-                <li class="left"><h6>Circuit, Running</h6></li>
-                <li class="right"><h6>>>></h6></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="box-trainer">
-            <div class="img-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/trainers/treva-drake.jpg" width="359" height="500" alt="Treva Drake">
-            </div>
-            <div class="content-wrap text-white">
-              <h3 class="h2 text-uppercase">Treva Drake</h3>
-              <ul class="text-uppercase">
-                <li class="left"><h6>Yoga</h6></li>
-                <li class="right"><h6>>>></h6></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
+      <?php if ($count % 3 == 0): ?>
       </div>
+      <?php endif; ?>
+
+      <?php $count++; endwhile; endif; ?>
+
+      <?php $count = $count - 1 ; if (0 != $count % 3): ?>
+      </div>
+      <?php endif; ?>
+
+      <?php wp_reset_postdata(); ?>
 
     </div>
 
+
+    <?php $queryResults = new WP_Query( array('post_type' => 'results') ); ?>
+    <?php if ($queryResults->have_posts()): ?>
 
     <div class="container bg-gray-dark text-white pad-v">
 
@@ -140,59 +93,32 @@
 
           <div class="slider slider-results">
 
+            <?php while ($queryResults->have_posts()) : $queryResults->the_post(); ?>
             <div class="slide">
               <div class="row">
-                <div class="span6">
-                  <h6 class="text-uppercase pad-b--30">Theresa the Beasta</h6>
-                  <p>Like most women, I had become an ace at yo-yo dieting.</p>
-                  <p>You know the deal... the spare tire tummy gets to be too much and you make the strong (and likely overdue) decision to get back on track with healthy eating and exercising. We all dread it, and yet, we all do it (again and again).</p>
-                  <p>I was small to average most of growing up until college when my 5’5” frame seamlessly fluctuated plus/minus 30 or so pounds. At my heaviest I was 165lbs. I know it wouldn’t get me a spot on My 600lb Life, but I hated my nasty gut and was only mildly comforted by a slightly bigger chest. It’s not a ton of weight, but for my frame, it was completely unhealthy.</p>
-                  <p>My go-to weight loss means was always Weight Watchers - and it worked (temporary) wonders! Swapping out the drinking and loading up on the fat free salad dressing always managed to shed the pounds and have me feeling a little less chubby. But with so much up and down over the (10+) years, I was sick of my body. I was tired of the pep talk I had to give myself to gear up for another few weeks/months of restrictive eating and counting points. I was pissed that I was too lazy to not earn more activity points (basically food credits) during the week so I could enjoy myself more often and eat shitty fried food.</p>
-                  <a href="#" class="read-more">Keep Reading >>></a>
+                <div class="span6 span-m-8">
+                  <h6 class="text-uppercase pad-b--30"><?php the_title(); ?></h6>
+                  <div class="content-wrap">
+                    <?php the_content(); ?>
+                  </div>
                 </div>
-                <div class="span6">
-                  <img src="<?php echo get_template_directory_uri(); ?>/library/img/results/theresa.jpg" width="554" height="554" alt="Theresa">
+                <div class="span6 span-m-4">
+                  <?php $thumbnailResults = wp_get_attachment_image_src( get_post_thumbnail_id(), 'results' ); ?>
+                  <img src="<?php echo $thumbnailResults[0]; ?>" alt="<?php the_title(); ?>" width="553" height="553">
                 </div>
               </div>
             </div>
-
-            <div class="slide">
-              <div class="row">
-                <div class="span6">
-                  <h6 class="text-uppercase pad-b--30">Jane</h6>
-                  <p>Like most women, I had become an ace at yo-yo dieting.</p>
-                  <p>You know the deal... the spare tire tummy gets to be too much and you make the strong (and likely overdue) decision to get back on track with healthy eating and exercising. We all dread it, and yet, we all do it (again and again).</p>
-                  <p>I was small to average most of growing up until college when my 5’5” frame seamlessly fluctuated plus/minus 30 or so pounds. At my heaviest I was 165lbs. I know it wouldn’t get me a spot on My 600lb Life, but I hated my nasty gut and was only mildly comforted by a slightly bigger chest. It’s not a ton of weight, but for my frame, it was completely unhealthy.</p>
-                  <p>My go-to weight loss means was always Weight Watchers - and it worked (temporary) wonders! Swapping out the drinking and loading up on the fat free salad dressing always managed to shed the pounds and have me feeling a little less chubby. But with so much up and down over the (10+) years, I was sick of my body. I was tired of the pep talk I had to give myself to gear up for another few weeks/months of restrictive eating and counting points. I was pissed that I was too lazy to not earn more activity points (basically food credits) during the week so I could enjoy myself more often and eat shitty fried food.</p>
-                  <a href="#" class="read-more">Keep Reading >>></a>
-                </div>
-                <div class="span6">
-                  <img src="<?php echo get_template_directory_uri(); ?>/library/img/results/theresa.jpg" width="554" height="554" alt="Theresa">
-                </div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="row">
-                <div class="span6">
-                  <h6 class="text-uppercase pad-b--30">Rebecca</h6>
-                  <p>Like most women, I had become an ace at yo-yo dieting.</p>
-                  <p>You know the deal... the spare tire tummy gets to be too much and you make the strong (and likely overdue) decision to get back on track with healthy eating and exercising. We all dread it, and yet, we all do it (again and again).</p>
-                  <p>I was small to average most of growing up until college when my 5’5” frame seamlessly fluctuated plus/minus 30 or so pounds. At my heaviest I was 165lbs. I know it wouldn’t get me a spot on My 600lb Life, but I hated my nasty gut and was only mildly comforted by a slightly bigger chest. It’s not a ton of weight, but for my frame, it was completely unhealthy.</p>
-                  <p>My go-to weight loss means was always Weight Watchers - and it worked (temporary) wonders! Swapping out the drinking and loading up on the fat free salad dressing always managed to shed the pounds and have me feeling a little less chubby. But with so much up and down over the (10+) years, I was sick of my body. I was tired of the pep talk I had to give myself to gear up for another few weeks/months of restrictive eating and counting points. I was pissed that I was too lazy to not earn more activity points (basically food credits) during the week so I could enjoy myself more often and eat shitty fried food.</p>
-                  <a href="#" class="read-more">Keep Reading >>></a>
-                </div>
-                <div class="span6">
-                  <img src="<?php echo get_template_directory_uri(); ?>/library/img/results/theresa.jpg" width="554" height="554" alt="Theresa">
-                </div>
-              </div>
-            </div>
+            <?php endwhile; ?>
 
           </div>
 
         </div>
       </div>
     </div>
+
+    <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
+
   </section>
 
 

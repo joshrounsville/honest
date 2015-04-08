@@ -27,6 +27,22 @@
       display: block;
     }
   }
+
+  @include breakpoint(large) {
+    top: 331px;
+    .pad-t--2x & {
+      top: 381px;
+    }
+  }
+  @include breakpoint(medium) {
+    top: 315px;
+    .pad-t--2x & {
+      top: 315px;
+    }
+  }
+  @include breakpoint(small) {
+    display: none;
+  }
 }
 
 .item-social {

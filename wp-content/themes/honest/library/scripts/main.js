@@ -28,31 +28,22 @@ $(function() {
 
 
 
-  //////// setup request animation frame shim
-  (function() {
-    var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
-    for( var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x ) {
-      window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-      window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
-    }
+  //////// hide/show mobile nav
+  var mobileNav = function() {
+    var btn = $('.js--hide-show-nav');
 
-    if (!window.requestAnimationFrame) {
-      window.requestAnimationFrame = function(callback, element) {
-        var currTime = new Date().getTime();
-        var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-        var id = window.setTimeout(function() { callback(currTime + timeToCall); }, timeToCall);
-        lastTime = currTime + timeToCall;
-        return id;
-      };
-    }
+    btn.on('touchstart click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
 
-    if (!window.cancelAnimationFrame) {
-      window.cancelAnimationFrame = function(id) {
-        clearTimeout(id);
-      };
-    }
-  }());
+      body.toggleClass('show-mobile-nav');
+
+    });
+
+  };
+
+  mobileNav();
+
 
 
 
@@ -183,8 +174,6 @@ $(function() {
     var target = $('#js--feed-yelp');
     var review = data.reviews[0];
 
-    console.log(data);
-
     $('<li>', {
       'class': 'item-yelp'
     }).prependTo(target);
@@ -216,9 +205,6 @@ $(function() {
 
 
 
-
-
-
   //////// carousel setup
   var slider = $('.slider');
 
@@ -229,6 +215,7 @@ $(function() {
     navigation : true,
     rewindNav : false,
     scrollPerPage : false,
+    singleItem : true,
     pagination : false,
     responsive: true,
     responsiveRefreshRate : 200,
@@ -239,5 +226,57 @@ $(function() {
   });
 
 
+
+
+  /// accept the link and launch small window
+  var openShareWindow = function(link) {
+    if ( isDesktop ) {
+      window.open(link, null, 'toolbar=no,menubar=no,width=540,height=380');
+    } else {
+      document.location.href = link;
+    }
+  };
+
+
+  /// accept the social type and create link
+  /// call openShareWindow and send link
+  var socialShare = function(type, title, url) {
+    var link;
+
+    if ( type === 'twitter') {
+
+      link = 'http://twitter.com/intent/tweet?text=' + title + '&amp;url=' + url + '&amp;hashtags=HonestTraining';
+
+    } else if ( type === 'facebook' ) {
+
+      if ( notDesktop ) {
+        link = 'https://m.facebook.com/sharer.php?u=' + url;
+      } else {
+        link = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      }
+
+    } else {
+
+      link = 'https://plus.google.com/share?url=' + url;
+
+    }
+
+    openShareWindow(link);
+
+  };
+
+
+
+  /// on share btn click figure out social type
+  /// call socialShare and send type
+  $('.js--share').on('click', function(e) {
+    e.preventDefault();
+
+    var type = $(this).attr('data-type');
+    var title = $(this).attr('data-title');
+    var url = $(this).attr('data-url');
+    socialShare(type, title, url);
+
+  });
 
 });

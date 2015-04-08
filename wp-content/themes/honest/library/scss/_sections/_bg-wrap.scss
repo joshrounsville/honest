@@ -5,38 +5,38 @@
 
 .bg-wrap {
   position: absolute;
-  top: 0;
+  top: 140px;
   right: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 460px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   z-index: -1;
-  .home & {
-    background-image: url(../img/backgrounds/bg-1.jpg);
+  &.bg-1-1 {
+    background-image: url(../img/backgrounds/bg-header-1-1.jpg);
   }
-  .page-template-page-schedule & {
-    background-image: url(../img/backgrounds/bg-2.jpg);
+  &.bg-2-1 {
+    background-image: url(../img/backgrounds/bg-header-2-1.jpg);
   }
-  .page-template-page-memberships & {
-    background-image: url(../img/backgrounds/bg-3.jpg);
+  &.bg-2-2 {
+    background-image: url(../img/backgrounds/bg-header-2-2.jpg);
   }
-  .page-template-page-nutrition & {
-    background-image: url(../img/backgrounds/bg-2.jpg);
+  &.bg-2-3 {
+    background-image: url(../img/backgrounds/bg-header-2-3.jpg);
   }
-  .page-template-page-get-started & {
-    background-image: url(../img/backgrounds/bg-2.jpg);
+
+  @include breakpoint(large) {
+    height: 400px;
+    top: 0;
   }
-  .page-template-page-contact & {
-    background-image: url(../img/backgrounds/bg-2.jpg);
+  @include breakpoint(medium) {
+    height: 300px;
   }
-  .page-template-page-the-studio & {
-    background-image: url(../img/backgrounds/bg-3.jpg);
-  }
-  .blog & {
-    background-image: url(../img/backgrounds/bg-2.jpg);
+  @include breakpoint(small) {
+    margin-top: 30px;
+    height: 250px;
   }
 }
 

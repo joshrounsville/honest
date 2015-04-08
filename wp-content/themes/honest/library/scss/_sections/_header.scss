@@ -8,6 +8,19 @@ header {
   margin-top: -10px;
   padding: 0 0 20px;
   animation: fadeIn 0.3s both;
+
+  @include breakpoint(large) {
+    padding: 0 0 15px;
+  }
+  @include breakpoint(medium) {
+    padding: 10px 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 101;
+  }
+  @include breakpoint(small) {
+    padding: 10px 0 0;
+  }
 }
 
 .nav-main {
@@ -36,9 +49,67 @@ header {
   a {
     color: #fff;
   }
-
   .btn {
     font-size: 13px;
+  }
+
+  @include breakpoint(large) {
+    font-size: 12px;
+    li {
+      padding: 0 7px;
+      &:nth-child(-n+3) {
+        padding: 0 13px;
+      }
+      &:first-of-type {
+        padding: 0 7px 0 0;
+      }
+      &:last-of-type {
+        padding: 0 0 0 7px;
+      }
+    }
+    h1 {
+      width: 150px;
+      bottom: -30px;
+    }
+  }
+  @include breakpoint(medium) {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    text-align: left;
+    padding: 20px;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.11s ease-in-out;
+    .show-mobile-nav & {
+      transform: translateX(0%);
+    }
+    li {
+      display: block;
+      padding: 0 0 10px;
+      &:nth-child(-n+3) {
+        padding: 0 0 5px;
+      }
+      &:first-of-type {
+        padding: 0 0 5px;
+      }
+      &:last-of-type {
+        padding: 0 0 5px;
+      }
+      &.tablet-hide {
+        display: none;
+        padding: 0;
+      }
+    }
+    h1 {
+      display: none;
+      bottom: auto;
+    }
+  }
+  @include breakpoint(small) {
+    top: 60px;
   }
 }
 
@@ -49,6 +120,115 @@ header {
   &:focus,
   &.active {
     border-color: #fff;
+  }
+
+  @include breakpoint(medium) {
+    border-bottom: none;
+    &:hover,
+    &:focus,
+    &.active {
+      color: $colorRed;
+    }
+  }
+}
+
+.nav-mobile {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: block;
+    &:after {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: #000;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.13s ease-in-out;
+    }
+    ul {
+      @include clearfix();
+    }
+    li {
+      display: block;
+      width: 50%;
+      float: left;
+      @include clearfix();
+    }
+    .show-mobile-nav & {
+      &:after {
+        z-index: 99;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.logo-header-mobile {
+  @include breakpoint(medium) {
+    display: block;
+    width: 80px;
+  }
+  @include breakpoint(small) {
+    width: 60px;
+  }
+}
+
+.menu-mobile {
+  display: block;
+  width: 50px;
+  float: right;
+  margin-top: 20px;
+  position: relative;
+  z-index: 102;
+  &:hover {
+    span {
+      &:first-of-type {
+        transform: translateY(-3px);
+      }
+      &:last-of-type {
+        transform: translateY(3px);
+      }
+    }
+  }
+  span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    margin: 0 0 5px;
+    transform-origin: 13px;
+    transition: all 0.1s ease-in-out;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .show-mobile-nav & {
+    span {
+      &:nth-of-type(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    width: 40px;
+    margin-top: 15px;
+    span {
+      transform-origin: 7px;
+    }
   }
 }
 

@@ -138,9 +138,36 @@ input::-moz-focus-inner {
   small {
     color: #9B9B9B;
   }
+  .loading {
+    .submit-btn {
+      display: block;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #fff;
+        border-right: 2px solid #aaa;
+        border-bottom: 2px solid #aaa;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        margin: -6px 20px 0 0;
+        position: absolute;
+        border-radius: 100%;
+        z-index: 2;
+        animation: spinner 0.4s infinite linear;
+      }
+    }
+  }
+  .ajax-loader {
+    display: none !important;
+  }
 }
 
 .form-contact {
+  position: relative;
   @include clearfix();
   label {
     text-transform: uppercase;
@@ -154,23 +181,74 @@ input::-moz-focus-inner {
   textarea {
     margin-top: 7px;
   }
+  .loading {
+    .submit-btn {
+      display: block;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #fff;
+        border-right: 2px solid #aaa;
+        border-bottom: 2px solid #aaa;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        margin: -6px 20px 0 0;
+        position: absolute;
+        border-radius: 100%;
+        z-index: 2;
+        animation: spinner 0.4s infinite linear;
+      }
+    }
+  }
+  .ajax-loader {
+    display: none !important;
+  }
 }
 
 .form-column {
   width: 45%;
+
+  @include breakpoint(small) {
+    width: 100%;
+  }
 }
 
 .form-column-left {
   float: left;
   label {
     &:first-of-type {
-      padding-bottom: 63px;
+      padding-bottom: 72px;
+    }
+  }
+
+  @include breakpoint(large) {
+    label {
+      &:first-of-type {
+        padding-bottom: 71px;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    float: none;
+    label {
+      padding: 0 0 20px;
+      &:first-of-type {
+        padding: 0 0 20px;
+      }
     }
   }
 }
 
 .form-column-right {
   float: right;
+
+  @include breakpoint(small) {
+    float: none;
+  }
 }
 
 .input-styled {
@@ -200,13 +278,48 @@ input::-moz-focus-inner {
     border: none;
     background: #f0f0f0;
   }
+
+  @include breakpoint(large) {
+    padding: 14px 15px 13px;
+  }
+  @include breakpoint(medium) {
+    padding: 13px 15px 12px;
+  }
 }
 
 
+div.wpcf7-response-output {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  left: 0;
 
+  @include breakpoint(medium) {
+    font-size: $fontSmall;
+    bottom: -45px;
+  }
+}
 
+span.wpcf7-form-control-wrap {
+  display: block;
+}
 
-
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  font-size: $fontSmall - 1;
+  color: $colorRed;
+  display: block;
+  width: 100%;
+  animation: fadeIn 0.23s ease-in-out;
+}
 
 
 

@@ -7,10 +7,27 @@
   height: 240px;
   text-align: left;
   margin-bottom: 40px;
+
+  @include breakpoint(large) {
+    height: 192px;
+  }
+  @include breakpoint(medium) {
+    height: 192px;
+  }
+  @include breakpoint(small) {
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
 }
 
 .box-community-inner {
   @include vAlign();
+
+  @include breakpoint(small) {
+    top: 0;
+    transform: translateY(0%);
+  }
 }
 
 .feed-instagram {
@@ -51,6 +68,24 @@
       color: $colorRed;
     }
   }
+
+  @include breakpoint(large) {
+    font-size: $fontLarge - 2;
+    li {
+      padding: 0 0 20px;
+    }
+  }
+  @include breakpoint(medium) {
+    font-size: $fontLarge - 3;
+    li {
+      padding: 0 0 10px;
+    }
+    img {
+      margin: auto;
+      width: 80px;
+      display: block;
+    }
+  }
 }
 
 .feed-twitter {
@@ -59,11 +94,19 @@
   color: $colorGrayLight;
   line-height: $lineHeightHeader;
   a {
-    @include ellipsis();
+    &[data-scribe='element:url'] {
+      @include ellipsis();
+      max-width: 100%;
+      display: inline-block;
+    }
   }
   .timePosted {
     font-size: 14px;
     color: $colorGrayXLight;
     padding: 0;
+  }
+
+  @include breakpoint(large) {
+    font-size: $fontH4 - 4;
   }
 }

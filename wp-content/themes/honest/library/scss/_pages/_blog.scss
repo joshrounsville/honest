@@ -55,6 +55,13 @@
 .post-read-more {
   text-align: center;
   padding: 30px 0 0;
+
+  @include breakpoint(medium) {
+    padding: 20px 0 0 0;
+  }
+  @include breakpoint(small) {
+    padding: 10px 0 0 0;
+  }
 }
 
 .post-share {
@@ -84,3 +91,114 @@
     font-size: $fontLarge + 4;
   }
 }
+
+.nav-posts {
+  text-align: center;
+  padding: 0 0 $padding 0;
+  @include clearfix();
+  a {
+    display: block;
+    color: $colorGray;
+    transition: color 0.13s ease-in-out, opacity 0.1s ease-in-out;
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      transition: transform 0.1s ease-in-out;
+    }
+    &:hover,
+    &:focus {
+      color: $colorRed;
+    }
+  }
+}
+
+.nav-posts-left {
+  float: left;
+  a {
+    &:hover,
+    &:focus {
+      &:before {
+        transform: translateX(-5px);
+      }
+    }
+    &:before {
+      border-right: 22px solid $colorGray;
+      margin-right: 20px;
+    }
+  }
+}
+
+.nav-posts-right {
+  float: right;
+  a {
+    &:hover,
+    &:focus {
+      &:after {
+        transform: translateX(5px);
+      }
+    }
+    &:after {
+      border-left: 22px solid $colorGray;
+      margin-left: 20px;
+    }
+  }
+}
+
+// .owl-prev,
+//   .owl-next {
+//     transition: color 0.13s ease-in-out, opacity 0.1s ease-in-out;
+//     &:hover,
+//     &:focus {
+//       color: $colorRed;
+//     }
+//     &.disabled {
+//       opacity: 0.2;
+//       pointer-events: none;
+//     }
+//     &:before,
+//     &:after {
+//       content: "";
+//       display: inline-block;
+//       vertical-align: middle;
+//       width: 0;
+//       height: 0;
+//       border-top: 12px solid transparent;
+//       border-bottom: 12px solid transparent;
+//       transition: transform 0.1s ease-in-out;
+//     }
+//   }
+
+//   .owl-prev {
+//     float: left;
+//     &:hover,
+//     &:focus {
+//       &:before {
+//         transform: translateX(-5px);
+//       }
+//     }
+//     &:before {
+//       border-right: 22px solid #fff;
+//       margin-right: 20px;
+//     }
+//   }
+
+//   .owl-next {
+//     float: right;
+//     &:hover,
+//     &:focus {
+//       &:after {
+//         transform: translateX(5px);
+//       }
+//     }
+//     &:after {
+//       border-left: 22px solid #fff;
+//       margin-left: 20px;
+//     }
+//   }
+// }

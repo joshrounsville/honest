@@ -6,7 +6,7 @@
 
 
 <?php get_header(); ?>
-
+  <div class="bg-wrap bg-2-3"></div>
 
   <section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-map relative">
@@ -21,13 +21,13 @@
       </div>
 
       <div class="row pad-b--2x text-center">
-        <div class="span6 offset3">
+        <div class="span6 offset3 span-l-8 offset-l-2">
           <div class="bg-white pad-v">
             <p class="section-headline-small text-uppercase strong">Studio Address</p>
             <ul class="pad-b">
               <li>4016 NE Fremont</li>
               <li>Portland, OR 97212</li>
-              <li class="pad-t--10"><a href="#" target="_blank" class="text-uppercase link-gray-dark">(Directions)</a></li>
+              <li class="pad-t--10"><a href="https://goo.gl/maps/SIfLH" target="_blank" class="text-uppercase link-gray-dark">(Directions)</a></li>
             </ul>
 
             <p class="section-headline-small text-uppercase strong">Call or Text Us</p>
@@ -50,36 +50,14 @@
 
       <div class="row pad-b--2x">
         <div class="span10 offset1">
-
-          <form action="#" class="form-contact">
-            <div class="form-column form-column-left">
-              <label>
-                Your Name
-                <input type="text" name="full-name" id="full-name" class="input-white" placeholder="First and last name">
-              </label>
-              <label>
-                Your Email
-                <input type="email" name="email-address" id="email-address" class="input-white" placeholder="Your email address">
-              </label>
-            </div>
-
-            <div class="form-column form-column-right">
-              <label>
-                Your Name
-                <textarea name="message" id="message" class="input-white" placeholder="Write your message" cols="30" rows="5"></textarea>
-              </label>
-              <input type="submit" class="btn btn--red btn--block" value="Submit">
-            </div>
-          </form>
-
+          <div class="form-contact">
+            <?php the_field('contact_form'); ?>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
-
-
-
 
 
 <?php get_footer(); ?>

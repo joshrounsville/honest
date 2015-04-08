@@ -6,7 +6,7 @@
 
 
 <?php get_header(); ?>
-
+  <div class="bg-wrap bg-2-2"></div>
 
   <section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-white relative">
@@ -43,7 +43,7 @@
                 <li class="border">$25 per hour</li>
               </ul>
             </div>
-            <a href="#" class="btn btn--red btn--block">Register</a>
+            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
@@ -63,23 +63,27 @@
                 <li class="border">$19 per hour</li>
               </ul>
             </div>
-            <a href="#" class="btn btn--red btn--block">Register</a>
+            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
-              <h4 class="h1 border-bottom">Unlimited</h4>
+              <h4 class="h1">5 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Week</span></h5>
               <ul class="list-memberships-classes">
                 <li>Circuit</li>
                 <li>Yoga</li>
                 <li>Cycling</li>
               </ul>
               <span class="price-memberships text-huge">$250</span>
-              <p>A month</p>
+              <ul class="list-inline">
+                <li>A month</li>
+                <li class="border">$12 per hour</li>
+              </ul>
             </div>
-            <a href="#" class="btn btn--red btn--block">Register</a>
+            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
@@ -97,7 +101,7 @@
 
       <div class="row">
         <div class="span12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin scelerisque augue id interdum. Aenean quis ex eget mi convallis varius sed nec urna. Nulla id odio pretium, hendrerit ante sed, porttitor justo. Proin varius arcu est, aliquam feugiat velit imperdiet eu. Aliquam volutpat a nunc non ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, elit at sollicitudin semper, risus justo interdum quam, sit amet maximus mauris nulla a sapien. Maecenas id felis nec neque elementum aliquam.</p>
+          <p>Our Honest Holistic Nutrition Plan focuses on ALL parts of your life. You are an individual so you need a unique and specialized plan just for you!  We take a look at your sleep/rest, stress, movement, food, water, posture and emotional health. As these all impact your nutrition and wellness plan. We set you up for success by creating a realistic plan, one that allows you to make mistakes (this is human, it's doing to happen anyways yo might as well make it a part of the program right?!) then focuses on recommitment. We will talk about behavior change, this is what your nutrition plan is centered around. Creating new behaviors around your food, practicing them a ton (allowing for divergences), until eventually they become just who you are and what you do. </p>
         </div>
       </div>
 
@@ -106,7 +110,7 @@
           <ul>
             <li class="text-huge">$75</li>
             <li>For an Hour</li>
-            <li class="pad-t--20"><a href="#" class="btn btn--red btn--wide-width">Register</a></li>
+            <li class="pad-t--20"><a href="/get-started/" class="btn btn--red btn--wide-width">Register</a></li>
           </ul>
         </div>
       </div>

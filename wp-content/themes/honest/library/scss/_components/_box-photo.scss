@@ -23,4 +23,42 @@
       padding: 0 0 10px;
     }
   }
+
+  @include breakpoint(large) {
+    .img-wrap {
+      height: 318px;
+    }
+    .content-wrap {
+      padding: 15px;
+      width: 88%;
+      &.equal-height {
+        min-height: 255px;
+      }
+    }
+  }
+  @include breakpoint(medium) {
+    .img-wrap {
+      height: 240px;
+    }
+    .content-wrap {
+      padding: 10px;
+      width: 94%;
+      &.equal-height {
+        min-height: 264px;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    padding-bottom: 20px;
+    .img-wrap {
+      height: 160px;
+    }
+    .content-wrap {
+      padding: 10px 10px 15px;
+      width: 94%;
+      &.equal-height {
+        min-height: 0;
+      }
+    }
+  }
 }

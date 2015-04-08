@@ -55,9 +55,9 @@
     <h4 class="header-sidebar">Follow</h4>
     <div class="sidebar-content sidebar-content-follow text-center">
       <ul class="list-inline">
-        <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
-        <li><a href="#" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
-        <li><a href="#" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+        <li><a href="https://instagram.com/paisleymeekin/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+        <li><a href="https://twitter.com/THEHonestpt" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
+        <li><a href="https://www.facebook.com/TheHonestPT" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
       </ul>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<div class="bg-wrap bg-2-3"></div>
 
 	<section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-white relative">
@@ -40,11 +40,10 @@
 							<div class="post-share">
 								<ul class="list-inline left">
 									<li>Share</li>
-									<li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
-									<li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+									<li><a href="#" data-type="twitter" data-title="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="js--share"><span class="fa fa-twitter-square"></span></a></li>
+									<li><a href="#" data-type="facebook" data-title="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="js--share"><span class="fa fa-facebook-square"></span></a></li>
+									<li><a href="#" data-type="google" data-title="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="js--share"><span class="fa fa-google-plus-square"></span></a></li>
 								</ul>
-
-								<a href="#" class="right">View Comments</a>
 							</div>
 
 						</div>

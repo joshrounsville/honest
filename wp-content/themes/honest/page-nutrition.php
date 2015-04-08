@@ -6,7 +6,7 @@
 
 
 <?php get_header(); ?>
-
+  <div class="bg-wrap bg-2-3"></div>
 
   <section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-white relative">
@@ -99,7 +99,7 @@
 
       <div class="row text-center pad-b--2x">
         <div class="span12">
-          <a href="#" class="btn btn--red btn--wide-width">Schedule an Appointemnt</a>
+          <a href="/get-started/" class="btn btn--red btn--wide-width">Schedule an Appointemnt</a>
         </div>
       </div>
 

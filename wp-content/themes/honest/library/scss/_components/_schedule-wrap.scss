@@ -27,6 +27,15 @@
       margin-right: 20px;
     }
   }
+
+  @include breakpoint(small) {
+    .filters {
+      select {
+        min-width: 0;
+        margin: 0 0 10px;
+      }
+    }
+  }
 }
 
 .hc_header_time {
@@ -48,14 +57,28 @@
   input {
     margin-right: 3px;
   }
+
+  @include breakpoint(medium) {
+    font-size: $fontH5 - 2;
+    width: 40%;
+    label {
+      padding-right: 5px;
+    }
+  }
 }
 
-.filter-days {
-  padding-right: 100px;
+.filter_days {
+  @include breakpoint(medium) {
+    width: 58%;
+  }
 }
 
 .date_links {
   padding: 20px 0 0 0;
+
+  @include breakpoint(small) {
+    padding: 0;
+  }
 }
 
 .healcode-previous,
@@ -79,12 +102,26 @@
       background: $colorGray;
     }
   }
+  @include breakpoint(medium) {
+    margin-right: -10px;
+  }
+  @include breakpoint(small) {
+    margin-right: 0;
+    text-align: center;
+  }
 }
 
 .healcode-previous {
   margin-right: -12px;
   a {
     border-radius: 5px 0 0 5px;
+  }
+
+  @include breakpoint(medium) {
+    margin-right: -10px;
+  }
+  @include breakpoint(small) {
+    margin-right: 0;
   }
 }
 
@@ -152,6 +189,26 @@
     background: $colorGray;
     color: #fff;
   }
+
+  @include breakpoint(small) {
+    padding: 5px 15px !important;
+    font-size: $fontSmall !important;
+    float: right;
+    margin-top: -3px;
+  }
+}
+
+div.list_view ol.schedule_list li.schedule_item div.info_wrapper {
+  @include breakpoint(small) {
+    width: 41.5% !important;
+  }
+}
+
+div.list_view ol.schedule_list li.schedule_item .signup {
+  @include breakpoint(small) {
+    width: 53.5% !important;
+    @include clearfix();
+  }
 }
 
 .hc_waitlist {
@@ -159,6 +216,10 @@
   vertical-align: middle;
   font-style: italic;
   padding-left: 4px;
+
+  @include breakpoint(small) {
+    padding-left: 1px;
+  }
 }
 
 .classname {
@@ -178,6 +239,24 @@
     &:hover,
     &:focus {
       color: $colorRed;
+    }
+  }
+}
+
+.hc_footer {
+  padding: 20px 0 0 0;
+  @include clearfix();
+  div {
+    float: left !important;
+  }
+  a {
+    display: block;
+    width: 230px;
+    height: 17px;
+    overflow: hidden;
+    img {
+      margin: -2px 0 0 -2px;
+      max-width: none;
     }
   }
 }

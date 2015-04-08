@@ -6,6 +6,7 @@
 .section-headline {
   text-transform: uppercase;
   padding-bottom: 10px;
+  text-align: center;
   .count {
     color: $colorRed;
     @include fontLeagueGothicItalic();
@@ -19,6 +20,17 @@
   .underline {
     border-bottom: 6px solid $colorGrayXDark;
     padding: 0 0 6px;
+  }
+
+  @include breakpoint(small) {
+    padding-top: 15px;
+    .count {
+      font-size: $fontH3 + 3;
+    }
+    .underline {
+      border-bottom: 4px solid $colorGrayXDark;
+      padding: 0 0 2px;
+    }
   }
 }
 

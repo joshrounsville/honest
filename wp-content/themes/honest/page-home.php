@@ -6,6 +6,7 @@
 
 
 <?php get_header(); ?>
+  <div class="bg-wrap bg-1-1"></div>
 
   <section class="pad-t--4x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="container bg-white relative">
@@ -79,22 +80,25 @@
 
 
       <div class="row pad-t pad-b--2x">
-        <div class="span7">
-          <div class="video-wrap">
-            <iframe src="//fast.wistia.net/embed/iframe/w50y8jfh10?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="651" height="366"></iframe>
-          </div>
-        </div>
-        <div class="span5">
+        <div class="span5 span-m-6 order-2">
           <div class="row pad-b--20">
-            <div class="span12">
-              <h3 class="section-headline"><span class="count">03</span><span class="underline">Results</span></h3>
+            <div class="span11 offset1 span-m-12 offset-m-0">
+              <h3 class="section-headline"><span class="count">03</span><span class="underline">About Us</span></h3>
             </div>
           </div>
           <div class="row pad-t--10">
-            <div class="span11 offset1">
-              <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius quam, at ullamcorper dolor. Integer fermentum, nulla quis commodo lacinia, est arcu efficitur eros, ac iaculis lectus lectus vel augue. Sed sed diam massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius quam, at ullamcorper dolor. Integer fermentum, nulla quis commodo lacinia, est arcu efficitur eros, ac iaculis lectus lectus vel augue. Sed sed diam massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius quam, at ullamcorper dolor. Integer fermentum, nulla quis commodo lacinia, est arcu efficitur eros, ac iaculis lectus lectus vel augue. Sed sed diam massa.</p>
-              <a href="#" class="btn btn--red btn--block">Get Started</a>
+            <div class="span11 offset1 span-m-12 offset-m-0">
+              <p class="small">We are a <strong>FUN, non-intimidating non-competitive</strong> neighborhood training studio that believes in <strong>holistic wellness</strong> and <strong>sustainable</strong>/life changing fitness/nutrition programs. We offer small group circuit training, Indoor cycling and yoga for all levels.</p>
+              <p class="small">We specialize in world class coaching, focus on getting bodies to move properly with lots of <strong>individual coaching</strong> and have a lot of FUN doing it.</p>
+              <p class="small pad-b--20">Honest Studio is a one stop shop for fitness and nutrition. Offering lots of COMMUNITY classes, education and lots of exercise variety. TRX, bodyweight, kettlebell, sports conditioning/agility training, weight training, olympic lifting, yoga, pilates, cycling, running and physical therapy techniques to name a few.</p>
+              <a href="/get-started/" class="btn btn--red btn--block">Get Started</a>
             </div>
+          </div>
+        </div>
+        <div class="span7 span-m-6 order-1">
+          <div class="video-wrap">
+            <iframe src="//fast.wistia.net/embed/iframe/w50y8jfh10?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="651" height="366"></iframe>
+            <h6 class="text-uppercase text-gray-light pad-t--10">Video Credit: <a href="http://www.craigflood.com/" target="_blank" class="link-gray-light">Craig Flood</a></h6>
           </div>
         </div>
       </div>
@@ -111,8 +115,8 @@
           <h2 class="text-schedule text-white"><span class="first">Sche</span><span class="second">dule</span></h2>
         </div>
         <div class="span8">
-          <p class="text-highlight text-white">Workouts every day of the week. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="btn btn--red">View Schedule</a>
+          <p class="text-highlight text-white">Honest Training has classes ALL throughout the week to ensure you get all your workouts in. <strong>Accountability</strong> is a big part of our business model. You purchase your workouts for the whole month with our software Mindbody connect, then can edit easily in case of a schedule change. This software allows you to have flexibility when you need it, but ensures you are accountable to your workouts. THE #1 most important thing in a wellness program to really see/feel results is consistency, and we stive to get you there! </p>
+          <a href="/schedule/" class="btn btn--red">View Schedule</a>
         </div>
       </div>
 
@@ -142,6 +146,7 @@
           <div class="box-community">
             <div class="box-community-inner feed-reviews">
               <ul class="list-reviews" id="js--feed-yelp">
+                <?php get_template_part( '/library/partials/yelp', 'api' ); ?>
                 <li class="text-center">
                   <a href="http://www.yelp.com/biz/honest-training-portland" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/library/img/logos/yelp.svg" width="100" height="45" alt="Yelp">

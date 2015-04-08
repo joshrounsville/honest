@@ -20,6 +20,10 @@ footer {
       color: $colorRed;
     }
   }
+
+  @include breakpoint(small) {
+    margin-bottom: -2px;
+  }
 }
 
 .list-footer-content {
@@ -33,11 +37,49 @@ footer {
       padding: 0 0 0 20px;
     }
   }
+
+  @include breakpoint(large) {
+    li {
+      padding-right: 20px;
+      &.first {
+        padding: 0 35px 0 0;
+      }
+    }
+  }
+  @include breakpoint(medium) {
+    li {
+      padding-right: 15px;
+      &.first {
+        display: none;
+      }
+      &.last {
+        padding: 0;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      display: block;
+      padding: 0 0 25px;
+      &.first {
+        display: none;
+      }
+      &.last {
+        padding: 0;
+      }
+    }
+  }
 }
 
 .list-info-footer {
   li {
     display: block;
+  }
+
+  @include breakpoint(small) {
+    li {
+      padding: 0 0 3px;
+    }
   }
 }
 
@@ -45,5 +87,11 @@ footer {
   font-size: $fontLarge;
   li {
     padding: 0 10px 0 0;
+  }
+
+  @include breakpoint(small) {
+    li {
+      display: inline-block;
+    }
   }
 }

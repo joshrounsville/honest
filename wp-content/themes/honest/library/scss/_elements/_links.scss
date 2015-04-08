@@ -22,3 +22,12 @@ a {
   }
 }
 
+.link-gray-light {
+  color: $colorGrayXLight;
+  &:hover,
+  &:focus {
+    color: $colorRed;
+  }
+}
+
+

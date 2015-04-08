@@ -6,6 +6,15 @@
 .box-trainer {
   position: relative;
   overflow: hidden;
+  &:hover,
+  &:focus {
+    .content-wrap {
+      top: 0;
+    }
+    .bio-wrap {
+      opacity: 1;
+    }
+  }
   .content-wrap {
     position: absolute;
     top: 380px;
@@ -17,8 +26,23 @@
     z-index: 5;
     background: #222;
     background: rgba(35, 35, 32, 0.7);
+    transition: top 0.11s ease-in-out;
     ul {
       @include clearfix();
+      .left {
+        span {
+          padding: 0 5px 0 0;
+          &:after {
+            content: ",";
+          }
+          &:last-of-type {
+            padding: 0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
   h3 {
@@ -26,5 +50,52 @@
     width: 50%;
     line-height: 1;
     padding: 0 0 5px;
+  }
+  .bio-wrap {
+    margin: 30px 0 0 0;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.11s ease-in-out;
+    overflow: scroll;
+    max-height: 74%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @include breakpoint(large) {
+    .content-wrap {
+      padding: 15px;
+      top: 305px;
+    }
+    .bio-wrap {
+      margin: 20px 0 0 0;
+      max-height: 76%;
+      p {
+        font-size: $fontBase - 4;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .content-wrap {
+      background: none;
+      position: static;
+      top: auto;
+      color: $colorGrayDark;
+      padding: 15px 0 0 0;
+    }
+    p, h3, h6, .bio-wrap {
+      color: $colorGrayDark;
+    }
+    .bio-wrap {
+      opacity: 1;
+      margin: 0;
+      padding: 15px 0 0 0;
+      max-height: auto;
+    }
+    .right {
+      h6 {
+        display: none;
+      }
+    }
   }
 }

@@ -30,7 +30,8 @@
                   <ul class="list-social-footer list-inline">
                     <li><a href="https://twitter.com/THEHonestpt" target="_blank"><span class="fa fa-twitter"></span></a></li>
                     <li><a href="https://www.facebook.com/TheHonestPT" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                    <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://instagram.com/paisleymeekin/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://plus.google.com/+PaisleyMeekin/posts?utm_source=bk&utm_medium=ha&utm_campaign=plusgeneralb2c&utm_term=%2Bgoogle%20%2Bplus&gclid=CJvJkfbVgrkCFS6CQgodIDwA7A" target="_blank"><span class="fa fa-google-plus"></span></a></li>
                   </ul>
                 </li>
                 <li class="last">
@@ -39,6 +40,11 @@
                     <input type="email" placeholder="your email address">
                     <input type="submit" value="submit">
                   </form>
+                  <h6 class="pad-t--30">Photo Credits</h6>
+                  <ul class="list-info-footer">
+                    <li>Ronal Hope</li>
+                    <li><a href="http://www.ronaldhope.com" target="_blank">www.ronaldhope.com</a></li>
+                  </ul>
                 </li>
               </ul>
 

@@ -43,6 +43,10 @@
 
 .text-highlight {
   font-size: $fontLarge;
+
+  @include breakpoint(large) {
+    font-size: $fontLarge - 2;
+  }
 }
 
 .text-white {
@@ -64,6 +68,20 @@
   line-height: 0.9;
   span {
     display: block;
+  }
+
+  @include breakpoint(large) {
+    font-size: 98px;
+  }
+  @include breakpoint(medium) {
+    font-size: 73px;
+  }
+  @include breakpoint(small) {
+    font-size: 40px;
+    text-align: center;
+    span {
+      display: inline;
+    }
   }
 }
 

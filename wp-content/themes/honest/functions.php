@@ -22,7 +22,8 @@ Let's get everything up and running.
 function bones_ahoy() {
 
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-  //require_once( 'library/custom-post-types/example.php' );
+  require_once( 'library/custom-post-types/trainers.php' );
+  require_once( 'library/custom-post-types/results.php' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
@@ -69,6 +70,8 @@ if ( ! isset( $content_width ) ) {
 // Thumbnail sizes
 add_image_size( 'post-thumb', 262, 130, true );
 add_image_size( 'post-header', 749, 324, true );
+add_image_size( 'trainer', 359, 500, true );
+add_image_size( 'results', 553, 553, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -95,7 +98,9 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'post-thumb' => __('262px by 130px'),
-        'post-header' => __('749px by 324px')
+        'post-header' => __('749px by 324px'),
+        'trainer' => __('359px by 500px'),
+        'results' => __('553px by 553px')
     ) );
 }
 

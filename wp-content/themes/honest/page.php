@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<div class="bg-wrap bg-2-3"></div>
 
 	<section class="pad-t--4x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 		<div class="container bg-white">
