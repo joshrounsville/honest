@@ -125,7 +125,7 @@ function wpcf7_is_rtl( $locale = '' ) {
 }
 
 function wpcf7_ajax_loader() {
-	$url = wpcf7_plugin_url( '/images/ajax-loader.gif' );
+	$url = wpcf7_plugin_url( 'images/ajax-loader.gif' );
 
 	return apply_filters( 'wpcf7_ajax_loader', $url );
 }
@@ -284,7 +284,7 @@ function wpcf7_load_modules() {
 		$file = trailingslashit( $dir ) . $mod . '.php';
 
 		if ( file_exists( $file ) ) {
-			include_once $file;
+			include_once $file; 
 		}
 	}
 }

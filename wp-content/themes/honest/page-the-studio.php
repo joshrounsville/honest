@@ -44,7 +44,7 @@
       <?php endif; ?>
 
         <div class="span4">
-          <div class="box-trainer">
+          <div class="box-trainer<?php if ($post->post_content!="") :?> has-bio<?php endif;?>">
             <div class="img-wrap">
               <?php $thumbnailTrainer = wp_get_attachment_image_src( get_post_thumbnail_id(), 'trainer' ); ?>
               <img src="<?php echo $thumbnailTrainer[0]; ?>" alt="<?php the_title(); ?>" width="359" height="500">

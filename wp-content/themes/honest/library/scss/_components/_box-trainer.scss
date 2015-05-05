@@ -6,15 +6,6 @@
 .box-trainer {
   position: relative;
   overflow: hidden;
-  &:hover,
-  &:focus {
-    .content-wrap {
-      top: 0;
-    }
-    .bio-wrap {
-      opacity: 1;
-    }
-  }
   .content-wrap {
     position: absolute;
     top: 380px;
@@ -43,6 +34,9 @@
           }
         }
       }
+      .right {
+        display: none;
+      }
     }
   }
   h3 {
@@ -56,9 +50,25 @@
     color: #fff;
     opacity: 0;
     transition: opacity 0.11s ease-in-out;
-    overflow: scroll;
     max-height: 74%;
     -webkit-overflow-scrolling: touch;
+  }
+
+  &.has-bio {
+    &:hover,
+    &:focus {
+      .content-wrap {
+        top: 0;
+      }
+      .bio-wrap {
+        opacity: 1;
+      }
+    }
+    ul {
+      .right {
+        display: inline-block;
+      }
+    }
   }
 
   @include breakpoint(large) {

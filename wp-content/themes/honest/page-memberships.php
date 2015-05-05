@@ -21,7 +21,7 @@
 
       <div class="row pad-b">
         <div class="span12">
-          <p>All payments are paid monthly... we do this for a couple reasons. First, it increases accountability! You pre pay for a whole month of workouts you are MUCH more likely to show up every time ;) You MUST use the sessions up in the month or you loose them... another layer of accountability here, do you see a theme? Of course there is a cancelation policy, 12 hours notice and your sessions is saved to use within that month. All payments are made on the Mindbody Online Software.</p>
+          <p>All payments are paid monthly... we do this for a couple reasons. First, it increases accountability! You pre pay for a whole month of workouts you are MUCH more likely to show up every time ;) You MUST use the sessions up in the month or you lose them... another layer of accountability here, do you see a theme? Of course there is a cancelation policy, 12 hours notice and your sessions is saved to use within that month. All payments are made on the Mindbody Online Software.</p>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
                 <li class="border">$25 per hour</li>
               </ul>
             </div>
-            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
@@ -63,7 +63,7 @@
                 <li class="border">$19 per hour</li>
               </ul>
             </div>
-            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
@@ -83,7 +83,7 @@
                 <li class="border">$12 per hour</li>
               </ul>
             </div>
-            <a href="/get-started/" class="btn btn--red btn--block">Register</a>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
           </div>
         </div>
 
@@ -110,7 +110,7 @@
           <ul>
             <li class="text-huge">$75</li>
             <li>For an Hour</li>
-            <li class="pad-t--20"><a href="/get-started/" class="btn btn--red btn--wide-width">Register</a></li>
+            <li class="pad-t--20"><a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--wide-width">Register</a></li>
           </ul>
         </div>
       </div>

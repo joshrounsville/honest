@@ -36,13 +36,16 @@
                 </li>
                 <li class="last">
                   <h6>Subscribe</h6>
-                  <form action="#" class="form-subscribe">
-                    <input type="email" placeholder="your email address">
-                    <input type="submit" value="submit">
+                  <form action="//Honestpt.us4.list-manage.com/subscribe/post?u=9519e1719b9f0396e25e196cf&amp;id=324fd8b555" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-subscribe" target="_blank">
+                    <input type="email" value="" name="EMAIL" placeholder="your email address" class="required email" id="mce-EMAIL">
+                    <div style="position: absolute; left: -5000px;">
+                      <input type="text" name="b_9519e1719b9f0396e25e196cf_324fd8b555" tabindex="-1" value="">
+                    </div>
+                    <input type="submit" value="submit" name="subscribe" id="mc-embedded-subscribe" class="button">
                   </form>
                   <h6 class="pad-t--30">Photo Credits</h6>
                   <ul class="list-info-footer">
-                    <li>Ronal Hope</li>
+                    <li>Ronald Hope</li>
                     <li><a href="http://www.ronaldhope.com" target="_blank">www.ronaldhope.com</a></li>
                   </ul>
                 </li>

@@ -1,13 +1,17 @@
 <?php get_header(); ?>
+	<div class="bg-wrap bg-2-3"></div>
 
+	<section class="pad-t--2x" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+		<div class="container bg-white bg-dotted pad-b--3x">
 
-	<section>
-		<div class="container pad-v">
-
-			<div class="row">
+			<div class="row text-center pad-v">
 				<div class="span12">
+					<h3 class="section-headline">Whoops...</h3>
+				</div>
+			</div>
 
-					<h1 class="pad-b--20">Whoops...</h1>
+			<div class="row pad-b">
+				<div class="span8 offset2">
 					<p>We can't seem to find the page you're looking for. Our <a href="/">homepage</a> might be a good place to get started.</p>
 				</div>
 			</div>

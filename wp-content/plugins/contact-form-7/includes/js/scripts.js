@@ -15,8 +15,7 @@
 			beforeSubmit: function(arr, $form, options) {
 				$form.wpcf7ClearResponseOutput();
 				$form.find('[aria-invalid]').attr('aria-invalid', 'false');
-				$form.addClass('loading');
-				//$form.find('img.ajax-loader').css({ visibility: 'visible' });
+				$form.find('img.ajax-loader').css({ visibility: 'visible' });
 				return true;
 			},
 			beforeSerialize: function($form, options) {
@@ -149,7 +148,8 @@
 
 	$.fn.wpcf7ExclusiveCheckbox = function() {
 		return this.find('input:checkbox').click(function() {
-			$(this).closest('.wpcf7-checkbox').find('input:checkbox').not(this).removeAttr('checked');
+			var name = $(this).attr('name');
+			$(this).closest('form').find('input:checkbox[name="' + name + '"]').not(this).prop('checked', false);
 		});
 	};
 
@@ -364,8 +364,7 @@
 		return this.each(function() {
 			$(this).find('div.wpcf7-response-output').hide().empty().removeClass('wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked').removeAttr('role');
 			$(this).find('span.wpcf7-not-valid-tip').remove();
-			//$(this).find('img.ajax-loader').css({ visibility: 'hidden' });
-			$(this).removeClass('loading');
+			$(this).find('img.ajax-loader').css({ visibility: 'hidden' });
 		});
 	};
 
