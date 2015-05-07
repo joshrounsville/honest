@@ -13,16 +13,16 @@
                 <li>
                   <h6>Location</h6>
                   <ul class="list-info-footer">
-                    <li>4453 NE Fremont Street</li>
+                    <li>4016 NE Fremont Street</li>
                     <li>Portland, Oregon</li>
-                    <li class="pad-t--10"><a href="https://goo.gl/maps/N13xZ" target="_blank">View Map</a></li>
+                    <li class="pad-t--10"><a href="https://goo.gl/maps/415Kg" target="_blank">View Map</a></li>
                   </ul>
                 </li>
                 <li>
                   <h6>Contact</h6>
                   <ul class="list-info-footer">
-                    <li><a href="mailto:info@honestraining.com" target="_blank">info@honestraining.com</a></li>
-                    <li>503-367-6356</li>
+                    <li><a href="mailto:help@honestportland.com" target="_blank">help@honestportland.com</a></li>
+                    <li>971-361-8020</li>
                   </ul>
                 </li>
                 <li>
