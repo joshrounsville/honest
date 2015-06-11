@@ -300,9 +300,17 @@ div.wpcf7-response-output {
   bottom: -70px;
   left: 0;
 
+  .page-template-page-get-started & {
+    bottom: 20px;
+  }
+
   @include breakpoint(medium) {
     font-size: $fontSmall;
     bottom: -45px;
+
+    .page-template-page-get-started & {
+      bottom: 10px;
+    }
   }
 }
 

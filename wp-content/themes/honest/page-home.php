@@ -37,7 +37,7 @@
         <div class="span4">
           <div class="box-photo">
             <div class="img-wrap text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/placeholder-spin.jpg" width="300" height="330" alt="Placeholder">
+              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/spin.jpg" width="360" height="330" alt="Spinning Class">
             </div>
             <div class="content-wrap equal-height">
               <h5 class="text-uppercase text-red text-center">Indoor Cycling</h5>
@@ -51,7 +51,7 @@
         <div class="span4">
           <div class="box-photo">
             <div class="img-wrap text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/placeholder-training.jpg" width="300" height="330" alt="Placeholder">
+              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/circuit-training.jpg" width="360" height="330" alt="Circuit Training">
             </div>
             <div class="content-wrap equal-height">
               <h5 class="text-uppercase text-red text-center">Circuit Training</h5>
@@ -65,7 +65,7 @@
         <div class="span4">
           <div class="box-photo">
             <div class="img-wrap text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/placeholder-yoga.jpg" width="300" height="330" alt="Placeholder">
+              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/yoga.jpg" width="360" height="330" alt="Yoga">
             </div>
             <div class="content-wrap equal-height">
               <h5 class="text-uppercase text-red text-center">Yoga</h5>

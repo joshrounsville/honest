@@ -98,6 +98,6 @@ gulp.task('serve', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'minifyJS', 'images'], cb);
+  runSequence('styles', ['jshint', 'minifyJS'], cb);
 });
 
