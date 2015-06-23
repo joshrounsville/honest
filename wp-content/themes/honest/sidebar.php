@@ -61,4 +61,12 @@
       </ul>
     </div>
   </div>
+
+  <div class="box-sidebar">
+    <h4 class="header-sidebar">Newsletter</h4>
+    <div class="sidebar-content">
+      <p>Subscribe to our newsletter for the latest health and wellness news.</p>
+      <a href="/newsletter/" class="btn btn--block btn--secondary mar-t--20">Subscribe</a>
+    </div>
+  </div>
 </div>

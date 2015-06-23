@@ -37,12 +37,6 @@
         </div>
       </div>
 
-      <div class="row text-center pad-v">
-        <div class="span12">
-          <a href="#" class="btn btn--red">See Full Schedule</a>
-        </div>
-      </div>
-
     </div>
   </section>
 

@@ -31,8 +31,14 @@
             </ul>
 
             <p class="section-headline-small text-uppercase strong">Call or Text Us</p>
-            <ul>
+            <ul class="pad-b">
               <li><a href="tel:9713618020" target="_blank" class="link-gray-dark">(971) 361-8020</a></li>
+            </ul>
+
+            <p class="section-headline-small text-uppercase strong">Newsletter</p>
+            <ul>
+              <li class="pad-b--10">Keep up with the latest health &amp; wellness news:</li>
+              <li><a href="/newsletter/" class="btn btn--secondary">Subscribe</a></li>
             </ul>
           </div>
         </div>

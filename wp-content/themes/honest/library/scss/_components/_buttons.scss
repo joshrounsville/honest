@@ -59,6 +59,11 @@
     min-width: 300px;
   }
 
+  &.btn--secondary {
+    padding: 10px 20px 9px;
+    font-size: $fontH6;
+  }
+
   @include breakpoint(large) {
     padding: 12px 25px 11px;
   }
