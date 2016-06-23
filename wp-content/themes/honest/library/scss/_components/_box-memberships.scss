@@ -5,10 +5,14 @@
 
 .box-memberships {
   .content {
-    padding: $padding 30px;
+    padding: $padding 25px;
+  }
+  .content--cycling {
+    padding-bottom: 0;
   }
   .h1 {
     padding: 0 0 10px;
+    font-size: $fontH1 - 2;
   }
   .border-bottom {
     padding: 0 0 17px;
@@ -24,12 +28,20 @@
     margin-left: 8px;
   }
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     .content {
-      padding: 30px 20px;
+      padding: 30px 15px;
+    }
+    .content--cycling {
+      padding-bottom: 0;
     }
     .h1 {
-      font-size: $fontH1 - 14;
+      font-size: $fontH1 - 8;
+    }
+  }
+  @include breakpoint(medium) {
+    .h1 {
+      font-size: $fontH1 - 16;
     }
     p {
       padding: 0 0 18px;
@@ -62,8 +74,54 @@
   }
 }
 
+.list-memberships-packages {
+  padding: 25px 0 6px;
+
+  .price {
+    font-size: 41px;
+  }
+  .price--first {
+    padding: 0 0 28px;
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: 1px;
+  }
+  @include breakpoint(medium) {
+    font-size: 18px;
+    .price--first {
+      padding: 0 0 38px;
+    }
+  }
+}
+
+.list-cycling-packages {
+  padding: 25px 0 11px;
+
+  .price {
+    font-size: 32px;
+    padding: 0 0 9px;
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: 10px;
+    .price {
+      font-size: 27px;
+    }
+  }
+  @include breakpoint(medium) {
+    padding-bottom: 11px;
+    .price {
+      font-size: 32px;
+    }
+  }
+  @include breakpoint(small) {
+    padding-bottom: 0;
+  }
+}
+
 .price-memberships {
   display: block;
-  padding: 0 0 10px;
+  padding: 0 0 15px;
 }
 

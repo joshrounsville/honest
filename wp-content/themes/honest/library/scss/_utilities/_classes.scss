@@ -86,8 +86,12 @@
 }
 
 .text-huge {
-  font-size: 50px;
+  font-size: 48px;
   line-height: $lineHeightHeader;
+
+  @include breakpoint(large) {
+    font-size: 44px;
+  }
 }
 
 .text-medium {

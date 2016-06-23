@@ -28,12 +28,12 @@
         </div>
       </div>
 
-      <?php $queryTrainer = new WP_Query( array('post_type' => 'trainers', 'order' => 'ASC') ); ?>
+      <?php $queryTrainer = new WP_Query( array('post_type' => 'trainers', 'order' => 'ASC', 'posts_per_page' => -1) ); ?>
       <?php $count = 1; if ($queryTrainer->have_posts()): ?>
 
       <div class="row text-center pad-b">
         <div class="span12">
-          <h3 class="section-headline"><span class="count">02</span><span class="underline">Our Trainers</span></h3>
+          <h3 class="section-headline"><span class="count">02</span><span class="underline">Our Staff</span></h3>
         </div>
       </div>
 
@@ -50,7 +50,12 @@
               <img src="<?php echo $thumbnailTrainer[0]; ?>" alt="<?php the_title(); ?>" width="359" height="500">
             </div>
             <div class="content-wrap">
-              <h3 class="h2 text-uppercase text-white"><?php the_title(); ?></h3>
+              <?php
+                $name = get_the_title();
+                $firstName = explode(" ", $name)[0];
+                $lastNmae = str_replace($firstName, '', $name);
+              ?>
+              <h3 class="h2 text-uppercase text-white"><?php echo $firstName; ?><br><?php echo $lastNmae; ?></h3>
               <ul class="text-uppercase text-white">
                 <li class="left"><h6><?php echo custom_taxonomies_terms_links(); ?></h6></li>
                 <li class="right"><h6>>>></h6></li>

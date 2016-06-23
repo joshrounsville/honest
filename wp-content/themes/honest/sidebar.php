@@ -3,7 +3,7 @@
 	<div class="box-sidebar">
     <h4 class="header-sidebar">About</h4>
     <div class="sidebar-content sidebar-content-about">
-      <p>Paisley Meeking is a Certified Holistic Nutrition and Lifestyle Coach.</p>
+      <p>We are a FUN, non-intimidating non-competitive neighborhood training studio that offers small group circuit training, indoor cycling and yoga.</p>
     </div>
   </div>
 

@@ -28,9 +28,9 @@
                 <li>
                   <h6>Connect</h6>
                   <ul class="list-social-footer list-inline">
-                    <li><a href="https://twitter.com/THEHonestpt" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="https://twitter.com/Honesttraining" target="_blank"><span class="fa fa-twitter"></span></a></li>
                     <li><a href="https://www.facebook.com/TheHonestPT" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                    <li><a href="https://instagram.com/paisleymeekin/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://www.instagram.com/portlandtrainerpaisley/" target="_blank"><span class="fa fa-instagram"></span></a></li>
                     <li><a href="https://plus.google.com/+PaisleyMeekin/posts?utm_source=bk&utm_medium=ha&utm_campaign=plusgeneralb2c&utm_term=%2Bgoogle%20%2Bplus&gclid=CJvJkfbVgrkCFS6CQgodIDwA7A" target="_blank"><span class="fa fa-google-plus"></span></a></li>
                   </ul>
                 </li>
@@ -58,6 +58,8 @@
       </footer>
 
 		<?php wp_footer(); ?>
+
+    <script type="text/javascript" src="https://app.locbox.com/website_plugins/lb-a4da49eed62af7d822495a60211fad5b5cee899a.js"></script>
 
 	</body>
 </html>

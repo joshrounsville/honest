@@ -70,6 +70,32 @@
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
+              <h4 class="h1">4 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Week</span></h5>
+              <ul class="list-memberships-classes">
+                <li>Circuit</li>
+                <li>Yoga</li>
+                <li>Cycling</li>
+              </ul>
+              <span class="price-memberships text-huge">$260</span>
+              <ul class="list-inline">
+                <li>A month</li>
+                <li class="border">$16 per hour</li>
+              </ul>
+            </div>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="row pad-b">
+
+        <div class="span4">
+          <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
+            <div class="content">
               <h4 class="h1">5 Workouts</h4>
               <h5 class="inline-border"><span class="text">A Week</span></h5>
               <ul class="list-memberships-classes">
@@ -87,7 +113,43 @@
           </div>
         </div>
 
+        <div class="span4">
+          <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
+            <div class="content">
+              <h4 class="h1">Packages</h4>
+              <h5 class="inline-border"><span class="text"></span></h5>
+              <ul class="list-memberships-packages">
+                <li>10 workouts</li>
+                <li class="price price--first">$280</li>
+                <li>20 workouts</li>
+                <li class="price">$515</li>
+              </ul>
+            </div>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
+            <div class="content content--cycling">
+              <h4 class="h1">Indoor Cycling</h4>
+              <h5 class="inline-border"><span class="text"></span></h5>
+              <ul class="list-cycling-packages">
+                <li>5 classes</li>
+                <li class="price">$140</li>
+                <li>10 classes</li>
+                <li class="price">$250</li>
+                <li>20 classes</li>
+                <li class="price">$400</li>
+              </ul>
+            </div>
+            <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
+          </div>
+        </div>
+
       </div>
+
+
     </div>
 
 
