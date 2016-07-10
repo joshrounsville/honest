@@ -30,17 +30,16 @@
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
-              <h4 class="h1">2 Workouts</h4>
-              <h5 class="inline-border"><span class="text">A Week</span></h5>
+              <h4 class="h1">8 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Month</span></h5>
               <ul class="list-memberships-classes">
                 <li>Circuit</li>
                 <li>Yoga</li>
                 <li>Cycling</li>
               </ul>
-              <span class="price-memberships text-huge">$200</span>
+              <span class="price-memberships text-huge">$214</span>
               <ul class="list-inline">
-                <li>A month</li>
-                <li class="border">$25 per hour</li>
+                <li>$26 per hour</li>
               </ul>
             </div>
             <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
@@ -50,17 +49,16 @@
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
-              <h4 class="h1">3 Workouts</h4>
-              <h5 class="inline-border"><span class="text">A Week</span></h5>
+              <h4 class="h1">12 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Month</span></h5>
               <ul class="list-memberships-classes">
                 <li>Circuit</li>
                 <li>Yoga</li>
                 <li>Cycling</li>
               </ul>
-              <span class="price-memberships text-huge">$230</span>
+              <span class="price-memberships text-huge">$244</span>
               <ul class="list-inline">
-                <li>A month</li>
-                <li class="border">$19 per hour</li>
+                <li>$20 per hour</li>
               </ul>
             </div>
             <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
@@ -70,8 +68,8 @@
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
-              <h4 class="h1">4 Workouts</h4>
-              <h5 class="inline-border"><span class="text">A Week</span></h5>
+              <h4 class="h1">16 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Month</span></h5>
               <ul class="list-memberships-classes">
                 <li>Circuit</li>
                 <li>Yoga</li>
@@ -79,8 +77,7 @@
               </ul>
               <span class="price-memberships text-huge">$260</span>
               <ul class="list-inline">
-                <li>A month</li>
-                <li class="border">$16 per hour</li>
+                <li>$16 per hour</li>
               </ul>
             </div>
             <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
@@ -96,17 +93,16 @@
         <div class="span4">
           <div class="box-memberships bg-gray-dark text-white text-center text-uppercase">
             <div class="content">
-              <h4 class="h1">5 Workouts</h4>
-              <h5 class="inline-border"><span class="text">A Week</span></h5>
+              <h4 class="h1">20 Workouts</h4>
+              <h5 class="inline-border"><span class="text">A Month</span></h5>
               <ul class="list-memberships-classes">
                 <li>Circuit</li>
                 <li>Yoga</li>
                 <li>Cycling</li>
               </ul>
-              <span class="price-memberships text-huge">$250</span>
+              <span class="price-memberships text-huge">$299</span>
               <ul class="list-inline">
-                <li>A month</li>
-                <li class="border">$12 per hour</li>
+                <li>$15 per hour</li>
               </ul>
             </div>
             <a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--block">Register</a>
@@ -170,7 +166,7 @@
       <div class="row text-center text-uppercase pad-t--20">
         <div class="span12">
           <ul>
-            <li class="text-huge">$75</li>
+            <li class="text-huge">$100</li>
             <li>For an Hour</li>
             <li class="pad-t--20"><a href="https://clients.mindbodyonline.com/classic/home?studioid=26630" target="_blank" class="btn btn--red btn--wide-width">Register</a></li>
           </ul>

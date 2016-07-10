@@ -20,10 +20,10 @@
       </div>
       <div class="row">
         <div class="span8">
-          <p class="text-highlight">Healthy Sustainable programs that focus on Holistic nutrition and lifestyle changes. Supportive FUN and friendly community (non competitive). Small groups to ensure you get lots of coaching, support and form checking. Lot’s of variety of movements and classes... including functional strength, balance, mobility and agility/ cardiovascular training and conditioning.</p>
+          <p class="text-highlight">We believe that small, consistent lifestyle changes lead to <i>major</i> transformations. At Honest's small group classes, you'll find a vibrant community of positive people creating a supportive, non-competitive, and fun environment that keeps you coming back for more. At Honest, our coaches focus on healthy, sustainable movements that make life—and loving your body—so much easier. Join us!</p>
         </div>
         <div class="span4">
-          <p class="text-uppercase h1 pad-b--0">We believe nothing in life is more precious than health and wellness.</p>
+          <p class="text-uppercase h1 pad-b--0">Nothing in life is more precious than health and wellness.</p>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
             </div>
             <div class="content-wrap equal-height">
               <h5 class="text-uppercase text-red text-center">Indoor Cycling</h5>
-              <p class="small pad-b--0">Indoor cycling combines high intensity interval training as well as endurance training to get your heart pumping and sweat dripping! We incorporate sitting and standing intervals to give you a total body workout that helps to build cardiovascular endurance, strengthen your heart, improve your mood and stimulate your mind and body.</p>
+              <p class="small pad-b--0">Indoor cycling combines high intensity interval training with muscle-building endurance training to get your heart pumping and sweat dripping! At Honest, indoor cycling classes mimic real-world road conditions to give you a total-body workout—while having a blast!</p>
             </div>
             <div class="text-center">
               <a href="/schedule/" class="btn btn--outline btn--med-width">View Schedule</a>
@@ -55,7 +55,7 @@
             </div>
             <div class="content-wrap equal-height">
               <h5 class="text-uppercase text-red text-center">Circuit Training</h5>
-              <p class="small pad-b--0">Semi private personal training. This means that you and 4-5 other people will be working out together. It really feel's like you still have a personal trainer... just add in a few other fun people :) This format allows for LOTS of coaching, modifications and more time/room to make the workout individual.</p>
+              <p class="small pad-b--0">At Honest, we offer small group personal training, which means that you and a handful of fun people will be working out together—and you'll still get plenty of personalized attention. It really feels like you have a personal trainer... with the benefit of cool people cheering you on.</p>
             </div>
             <div class="text-center">
               <a href="/schedule/" class="btn btn--outline btn--med-width">View Schedule</a>
@@ -65,11 +65,11 @@
         <div class="span4">
           <div class="box-photo">
             <div class="img-wrap text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/img/box-photo/yoga.jpg" width="360" height="330" alt="Yoga">
+              <img src="http://honestportland.com/wp-content/uploads/2016/04/combopic.jpg" width="360" height="330" alt="Spinning Class">
             </div>
             <div class="content-wrap equal-height">
-              <h5 class="text-uppercase text-red text-center">Yoga</h5>
-              <p class="small pad-b--0">Gentle yoga for any level that is SO good for EVERY body. The focus is slowing down, stretching tight muscles, breathing and bringing awareness into our lives. So important. This is such a great change of pace of our everyday busy lives and essential to our physical and emotional health.</p>
+              <h5 class="text-uppercase text-red text-center">Combo Classes</h5>
+              <p class="small pad-b--0">From circuit and spin power classes to nutritional talks and weekend warrior workouts, Honest members have access to a whole schedule of fun, challenging classes that offer plenty of variety for every body—plus community events like costumed fun runs and themed spin parties!</p>
             </div>
             <div class="text-center">
               <a href="/schedule/" class="btn btn--outline btn--med-width">View Schedule</a>
@@ -88,9 +88,9 @@
           </div>
           <div class="row pad-t--10">
             <div class="span11 offset1 span-m-12 offset-m-0">
-              <p class="small">We are a <strong>FUN, non-intimidating non-competitive</strong> neighborhood training studio that believes in <strong>holistic wellness</strong> and <strong>sustainable</strong>/life changing fitness/nutrition programs. We offer small group circuit training, Indoor cycling and yoga for all levels.</p>
-              <p class="small">We specialize in world class coaching, focus on getting bodies to move properly with lots of <strong>individual coaching</strong> and have a lot of FUN doing it.</p>
-              <p class="small pad-b--20">Honest Studio is a one stop shop for fitness and nutrition. Offering lots of COMMUNITY classes, education and lots of exercise variety. TRX, bodyweight, kettlebell, sports conditioning/agility training, weight training, olympic lifting, yoga, pilates, cycling, running and physical therapy techniques to name a few.</p>
+              <p class="small">We are a <strong>fun, non-intimidating, non-competitive</strong> neighborhood training studio that believes in holistic wellness and sustainable life changing fitness and nutrition programs. That means no crash dieting, no body-trashing workouts, and plenty of laughter.</p>
+              <p class="small">We specialize in world-class coaching, with a focus on getting bodies to move properly with lots of individual coaching and a huge variety of movements to target the whole body, every class.</p>
+              <p class="small pad-b--20">Honest is a one-stop shop for fitness, from indoor cycling and kettlebell classes to TRX training, running clubs, kickboxing, weight training, and more. Thanks to our physical therapy and nutritionist partners, being a member of the Honest community is like having a passport to health. What are you waiting for?</p>
               <a href="/get-started/" class="btn btn--red btn--block">Get Started</a>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <h2 class="text-schedule text-white"><span class="first">Sche</span><span class="second">dule</span></h2>
         </div>
         <div class="span8">
-          <p class="text-highlight text-white">Honest Training has classes ALL throughout the week to ensure you get all your workouts in. <strong>Accountability</strong> is a big part of our business model. You purchase your workouts for the whole month with our software Mindbody connect, then can edit easily in case of a schedule change. This software allows you to have flexibility when you need it, but ensures you are accountable to your workouts. THE #1 most important thing in a wellness program to really see/feel results is consistency, and we stive to get you there! </p>
+          <p class="text-highlight text-white">Honest hosts classes throughout the week—morning and evening—to help you fit plenty of fun workouts into your schedule. <strong>Accountability</strong> is a big part of our plan for fitness success, which is why we offer monthly membership plans to help you reach your goals. The most important thing in a wellness program is consistency, and our classes will get you there.</p>
           <a href="/schedule/" class="btn btn--red">View Schedule</a>
         </div>
       </div>
@@ -134,7 +134,7 @@
       </div>
 
       <div class="row text-center">
-        <div class="span4">
+        <div class="span8 span-m-6">
           <div class="box-community">
             <div class="box-community-inner">
               <ul class="feed-instagram" id="js--feed-instagram"></ul>
@@ -142,10 +142,22 @@
           </div>
           <a href="https://instagram.com/paisleymeekin/" class="btn btn--outline btn--med-width" target="_blank">Visit us on Instagram</a>
         </div>
-        <div class="span4">
+        <div class="span4 span-m-6">
           <div class="box-community">
             <div class="box-community-inner feed-reviews">
-              <ul class="list-reviews" id="js--feed-yelp">
+              <ul class="list-reviews">
+                <li class="item-yelp">
+                  <a href="http://www.yelp.com/biz/honest-training-portland?hrid=nIcYKKhHdEbWPncYY8zU6w" target="_blank">Love love love Honest Training! Currently taking Spinn and Circuit Training every week and I am addicted...</a>
+                  <span>
+                    <a href="http://www.yelp.com/user_details?userid=UAT__hOnztjVhDHyfqVdrw" target="_blank">Evelyn P.</a>
+                  </span>
+                </li>
+                <li class="item-yelp">
+                  <a href="http://www.yelp.com/biz/honest-training-portland?hrid=qy9H42l3naR15ddgpCBD-w" target="_blank">Holy moley! Where can you go to have fun, be healthy, and learn new things? Honest PT!!!</a>
+                  <span>
+                    <a href="http://www.yelp.com/user_details?userid=ldBY62UoYmUSjylfo3f3vQ" target="_blank">Alex D.</a>
+                  </span>
+                </li>
                 <?php get_template_part( '/library/partials/yelp', 'api' ); ?>
                 <li class="text-center">
                   <a href="http://www.yelp.com/biz/honest-training-portland" target="_blank">
@@ -157,19 +169,10 @@
           </div>
           <a href="http://www.yelp.com/biz/honest-training-portland" class="btn btn--outline btn--med-width" target="_blank">Read Reviews</a>
         </div>
-        <div class="span4">
-          <div class="box-community">
-            <div class="box-community-inner feed-twitter" id="js--feed-twitter"></div>
-          </div>
-          <a href="https://twitter.com/THEHonestpt" class="btn btn--outline btn--med-width" target="_blank">Connect on Twitter</a>
-        </div>
       </div>
 
     </div>
   </section>
-
-<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
-<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
 
 <?php get_footer(); ?>
 

@@ -66,8 +66,8 @@
               <ul class="list-inline">
                 <li><a href="/the-studio/" class="nav-item nav-the-studio">The Studio</a></li>
                 <li><a href="/schedule/" class="nav-item nav-schedule">Schedule</a></li>
-                <li><a href="/nutrition/" class="nav-item nav-nutrition">Nutrition</a></li>
-                <li><a href="/blog/" class="nav-item nav-blog">Blog</a></li>
+                <li><a href="/memberships/" class="nav-item nav-memberships">Memberships</a></li>
+                <li><a href="/contact/" class="nav-item nav-contact">Contact</a></li>
                 <li class="tablet-hide mobile-hide">
                   <h1 itemscope itemtype="http://schema.org/Organization">
                     <a href="/" class="logo-header">
@@ -75,8 +75,8 @@
                     </a>
                   </h1>
                 </li>
-                <li><a href="/memberships/" class="nav-item nav-memberships">Memberships</a></li>
-                <li><a href="/contact/" class="nav-item nav-contact">Contact</a></li>
+                <li><a href="/honest-bootcamp/" class="nav-item nav-bootcamp">Honest Bootcamp</a></li>
+                <li><a href="/blog/" class="nav-item nav-blog">Blog</a></li>
                 <li><a href="/get-started/" class="btn btn--red">Get Started</a></li>
               </ul>
             </nav>

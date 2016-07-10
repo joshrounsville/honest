@@ -30,15 +30,13 @@ header {
   text-align: center;
   @include fontMontserrat();
   li {
-    padding: 0 15px;
-    &:nth-child(-n+3) {
-      padding: 0 22px;
-    }
+    padding: 0 10px;
+
     &:first-of-type {
-      padding: 0 15px 0 0;
+      padding: 0 10px 0 0;
     }
     &:last-of-type {
-      padding: 0 0 0 15px;
+      padding: 0 0 0 10px;
     }
   }
   h1 {
